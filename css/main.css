@@ -1,0 +1,177 @@
+/* configurações padrões */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+/* variaveis */
+
+:root{
+    --cor1: #ED5967;
+    --cor2: #112e6a;
+    --cor3: #1C4D8C;
+    --cor4: #2A7ABF;
+    --cor5: #F2D857;  
+}
+
+h1, h2, h3, a{
+    white-space: nowrap;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}  
+
+section.main h2{
+    font-size: clamp(0.5em, 1.3em + 1.5vw, 3em);
+    padding: 80px 0 40px 0;
+    font-weight: bolder;
+}
+
+.w50{
+    width: 50%;
+}
+
+.center{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.align-right,
+.align-right h3{
+    text-align: right !important;
+    margin-left: 20px;
+}
+
+/* reponsiva */
+
+@media screen and (max-width: 1200px){
+    ul#serv li{
+        flex-wrap: wrap;
+        width: 49%;
+    }
+
+    ul#serv li.centro{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 930px){
+    header .desktop{
+        display: none;
+    }
+
+    header .mobile{
+        display: block;
+    }
+
+    header .mobile i{
+       font-size: 28px; 
+       color: white;
+       cursor: pointer;
+    }
+
+    header .mobile ul{
+        position: absolute;
+        display: none;
+        width: 100%;  
+        left: 0;
+    }
+
+    header .mobile a{
+        text-align: center;
+        color: black;
+        display: block;
+        padding: 12px 0;
+        background: white;
+        border-bottom: 1px solid black;
+    }
+
+    header .mobile a:hover{
+        text-decoration: underline;
+    }
+
+    .projetos ul a{
+        width: 49.4%;
+        height: 24vw;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .w50{
+        width: 100%;
+        text-align: center !important;
+    }
+
+    ul#serv li{
+        width: 95%;
+    }
+
+    ul#serv li.centro{
+        margin-right: 23px;
+    }
+
+    .projetos ul a{
+        width: 90%;
+        height: 32vw;
+        margin: 0 auto 10px;
+        max-width: 350px;
+    }
+
+    footer .container-sobre{
+        display: block;
+        
+    }
+
+    footer h3,
+    footer .container-sobre p{
+        text-align: center;
+    }
+
+    footer .contato-info{
+        border: 0;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .left{
+        align-self: flex-start;
+    }
+
+    .right{
+        align-self: flex-end;
+    }
+    
+    .habilidades ul{
+        flex-direction: column;
+    }
+
+    .habilidades li{
+        margin: 0;
+    }
+
+    .habilidades ul li i{
+        padding: 40px 0 10px;
+    }
+
+    .habilidades{
+        margin-bottom: 170px;
+    }
+
+    .projetos ul a{
+        width: 99%;
+        height: 45vw;
+    }
+
+    footer .email div{
+        display: flex;
+        margin-left: -10px;
+        justify-content: center;
+    }
+}
