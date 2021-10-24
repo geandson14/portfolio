@@ -21,6 +21,10 @@ html, body{
     --cor5: #F2D857;  
 }
 
+ul{
+    list-style-type: none;
+}
+
 h1, h2, h3, a{
     white-space: nowrap;
     font-weight: bold;
@@ -45,8 +49,13 @@ section.main h2{
 
 .align-right,
 .align-right h3{
-    text-align: right !important;
-    margin-left: 20px;
+    text-align: right;
+    margin-left: 15px;
+}
+
+section.main h2{
+    font-size: clamp(0.5em, 1.3em + 1.5vw, 3em);
+    padding: 80px 0 40px 0;
 }
 
 /* reponsiva */
@@ -111,10 +120,7 @@ section.main h2{
 
     ul#serv li{
         width: 95%;
-    }
-
-    ul#serv li.centro{
-        margin-right: 23px;
+        padding: 18px 10px;
     }
 
     .projetos ul a{
@@ -125,8 +131,7 @@ section.main h2{
     }
 
     footer .container-sobre{
-        display: block;
-        
+        display: block;   
     }
 
     footer h3,
@@ -147,6 +152,11 @@ section.main h2{
     .right{
         align-self: flex-end;
     }
+
+    .align-right,
+    .align-right h3{
+        text-align: center;
+    }
     
     .habilidades ul{
         flex-direction: column;
@@ -160,8 +170,8 @@ section.main h2{
         padding: 40px 0 10px;
     }
 
-    .habilidades{
-        margin-bottom: 170px;
+    .projetos{
+        margin-top: 200px;
     }
 
     .projetos ul a{
