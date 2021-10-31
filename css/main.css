@@ -1,3 +1,6 @@
+@import url('style.css');
+@import url('projetos.css');
+
 /* configurações padrões */
 
 *{
@@ -171,7 +174,7 @@ section.main h2{
     }
 
     .projetos{
-        margin-top: 200px;
+        margin-top: 250px;
     }
 
     .projetos ul a{

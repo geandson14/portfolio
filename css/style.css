@@ -176,17 +176,17 @@ section.main .habilidades h2{
     height: 17vw;
 }
 
+.projetos ul a h3{
+    background: rgba(0, 0, 0, 0.250);
+    align-self: flex-end;
+    width: 100%;
+}
+
 .projetos ul a .image{
     width: 100%;
     display: flex;
     background-size: 100% 100%;
     background-image: url("../image/loading.png");
-}
-
-.projetos ul a h3{
-    background: rgba(0, 0, 0, 0.250);
-    align-self: flex-end;
-    width: 100%;
 }
 
 /* contato */
