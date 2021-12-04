@@ -89,7 +89,7 @@ section.main h2{
        cursor: pointer;
     }
 
-    header .mobile ul{
+    header .mobile nav{
         position: absolute;
         display: none;
         width: 100%;  

@@ -2,11 +2,10 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Olá, sou Geandson, estudante de TI, tenho 18 anos, estudo programação a 1 ano, sou desenvolvedor full stack iniciante, desenvolvo HTML,CSS e programo JavaScript, PHP e Python. Estou a procura de trabalho.">
+    <meta name="description" content="Olá, sou Geandson, esse é meu portfólio, sou estudante de TI, tenho 18 anos, estudo programação a 1 ano, sou desenvolvedor full stack iniciante, desenvolvo HTML,CSS e programo JavaScript, PHP e Python. Estou a procura de trabalho.">
     <link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"> -->
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
     <title>Geandson Nunes - Portfólio Web</title>
@@ -14,26 +13,26 @@
 <body>
     <section class="banner-header" id="home">
         <header id="header">
-            <nav class="center">
+            <div class="center">
                 <h1><a href="#home">PORTFÓLIO</a></h1>
-                <div class="desktop">
-                    <a href="#home">HOME</a>
-                    <a href="#sob">SOBRE MIN</a>
-                    <a href="#serv">SERVIÇOS</a>
-                    <a href="#proj">PROJETOS</a>
-                    <a href="#cont" class="cont-btn" style="color: var(--cor3)">CONTATO</a>
-                </div>
+                <nav class="desktop">
+                    <a href="#home" title="home">HOME</a>
+                    <a href="#sob" title="sobre">SOBRE MIN</a>
+                    <a href="#serv" title="serviços">SERVIÇOS</a>
+                    <a href="#proj" title="projetos">PROJETOS</a>
+                    <a href="#cont" title="contato" class="cont-btn" style="color: var(--cor3)">CONTATO</a>
+                </nav>
                 <div class="mobile">
                     <i class="fas fa-bars"></i>
-                    <ul>
-                        <a href="#home">HOME</a>
-                        <a href="#sob">SOBRE MIN</a>
-                        <a href="#serv">SERVIÇOS</a>
-                        <a href="#proj">PROJETOS</a>
-                        <a href="#cont">CONTATO</a>
-                    </ul>
+                    <nav>
+                        <a href="#home" title="home">HOME</a>
+                        <a href="#sob" title="sobre">SOBRE MIN</a>
+                        <a href="#serv" title="serviços">SERVIÇOS</a>
+                        <a href="#proj" title="projetos">PROJETOS</a>
+                        <a href="#cont" title="contato">CONTATO</a>
+                    </nav>
                 </div>
-            </nav>
+            </div>
         </header>
         <div class="text">
             <h1>Olá, sou Geandson</h1>
@@ -49,7 +48,7 @@
                     <h2>CRIAÇÃO DE SITE</h2>
                     <p>Criação de sites responsivos, site institucionais, sites profissionais, Landing Pages e sites pessoais, etc...</p>
                 </div>
-                <a href="#cont"><i class="fas fa-arrow-circle-down"></i></a>
+                <a href="#cont" title="contato"><i class="fas fa-arrow-circle-down"></i></a>
             </li>
             <li>
                 <div class="serv-info">
@@ -57,7 +56,7 @@
                 <h2>MANUTENÇÃO DE SITE</h2>
                 <p>Melhor posicionamento de buscar do site(SEO), verificação da velocidade do site, verificação de responsividade, etc...</p>
                 </div>
-                <a href="#cont"><i class="fas fa-arrow-circle-down"></i></a>
+                <a href="#cont" title="contato"><i class="fas fa-arrow-circle-down"></i></a>
             </li>
             <li class="centro">
                 <div class="serv-info">
@@ -65,7 +64,7 @@
                     <h2>ATUALIZAÇÃO DE SITE</h2>
                     <p>Criação de novas paginas para o site, Atualização no design do site, Adicionar novos elementos, etc...</p>
                 </div>
-                <a href="#cont"><i class="fas fa-arrow-circle-down"></i></a> 
+                <a href="#cont" title="contato"><i class="fas fa-arrow-circle-down"></i></a> 
             </li>
         </ul><!-- serv -->
         <div class="habilidades center">
@@ -97,12 +96,12 @@
         <div class="projetos" id="proj">
             <h2>PROJETOS</h2>
             <ul class="center">
-                <a title="projeto" href="https://geandson14.github.io/calcular-imc/" target="_blank"><div class="image" style="background-image: url('image/calcular-imc.png');"><h3>Calculadora imc</h3></div></a>
-                <a title="projeto" href=""><div class="image"><h3>Lorem ipsum</h3></div></a>
-                <a title="projeto" href=""><div class="image"><h3>Lorem ipsum</h3></div></a>
-                <a title="projeto" href=""><div class="image"><h3>Lorem ipsum</h3></div></a>
-                <a title="projeto" href=""><div class="image"><h3>Lorem ipsum</h3></div></a>
-                <a title="projeto" href=""><div class="image"><h3>Lorem ipsum</h3></div></a>
+                <a title="projeto" rel="noreferrer" href="https://geandson14.github.io/calcular-imc/" target="_blank"><div class="image" style="background-image: url('image/calcular-imc.png');"><h3>Calculadora imc</h3></div></a>
+                <a title="projeto" rel="noreferrer" href="#proj"><div class="image"><h3>Lorem ipsum</h3></div></a>
+                <a title="projeto" rel="noreferrer" href="#proj"><div class="image"><h3>Lorem ipsum</h3></div></a>
+                <a title="projeto" rel="noreferrer" href="#proj"><div class="image"><h3>Lorem ipsum</h3></div></a>
+                <a title="projeto" rel="noreferrer" href="#proj"><div class="image"><h3>Lorem ipsum</h3></div></a>
+                <a title="projeto" rel="noreferrer" href="#proj"><div class="image"><h3>Lorem ipsum</h3></div></a>
             </ul>
         </div><!-- projetos  -->
 
@@ -127,9 +126,9 @@
             <div class="contato-info w50">
                 <div class="rede-socias">
                     <h3>Redes Socias</h3>
-                    <a title="github"  href="https://github.com/geandson14" target="_blank"><i class="fab fa-github"></i></a>
-                    <a title="instagram"  href="https://www.instagram.com/_geandson14/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a title="linkedin"  href="https://www.linkedin.com/in/geandson-nunes-b14251219/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a title="github" rel="noreferrer"  href="https://github.com/geandson14" target="_blank"><i class="fab fa-github"></i></a>
+                    <a title="instagram" rel="noreferrer"  href="https://www.instagram.com/_geandson14/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a title="linkedin" rel="noreferrer" href="https://www.linkedin.com/in/geandson-nunes-b14251219/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
                 <div class="email">
                     <h3>Entre em contato</h3>
@@ -139,11 +138,11 @@
         </div>
         <div class="copyright">
             <div></div>
-            <p>©desenvolvido por <a title="github" href="https://github.com/geandson14" target="_blank">Geandson Nunes</a></p>
+            <p>©desenvolvido por <a title="github" rel="noreferrer" href="https://github.com/geandson14" target="_blank">Geandson Nunes</a></p>
             <a href="#home" style="color: white;"><i class="fas fa-chevron-up"></i></a>
         </div>    
     </footer>
-    <script src="js/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/typed.js"></script>
 </body>

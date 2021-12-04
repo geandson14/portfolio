@@ -18,37 +18,37 @@ header .mobile{
     display: none;
 }
 
-header nav{
+header .center{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header nav h1{
+header .center h1{
     font-size: 28px;
     margin: 15px 0;
 }
 
-header nav a{
+header .center a{
     color: white;
 }
 
-header nav .desktop > a{
+header .center nav.desktop > a{
     margin-left: 20px;
     font-weight: 700;
 }
 
-header nav .desktop .cont-btn{
+header .center nav.desktop .cont-btn{
     padding: 13px 25px;
     border-radius: 50px;
     background: var(--cor5);
 }
 
-header nav .desktop .cont-btn:hover{
+header .center nav.desktop .cont-btn:hover{
     border: 0;
 }
 
-header nav .desktop > a:hover{
+header .center nav.desktop > a:hover{
     border-bottom: 2px solid #F2D857;
 }
 
@@ -149,7 +149,7 @@ section.main .habilidades h2{
 
 .habilidades ul li h3{
     font-size: clamp(0.3em, 1em + 1vw, 1.5em);
-    color: rgb(167, 166, 166);
+    color: rgb(133, 133, 133);
 }
 
 /* projetos */
@@ -177,7 +177,7 @@ section.main .habilidades h2{
 }
 
 .projetos ul a h3{
-    background: rgba(0, 0, 0, 0.250);
+    background: rgba(0, 0, 0, 0.486);
     align-self: flex-end;
     width: 100%;
 }

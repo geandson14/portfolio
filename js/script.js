@@ -8,7 +8,7 @@
 
 $(function(){
     $('.mobile').click(function(){
-        var listaMenu = $('.mobile ul');
+        var listaMenu = $('.mobile nav');
         listaMenu.slideToggle();
     });
 
