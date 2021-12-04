@@ -1,5 +1,4 @@
 @import url('style.css');
-@import url('projetos.css');
 
 /* configurações padrões */
 
@@ -64,12 +63,12 @@ section.main h2{
 /* reponsiva */
 
 @media screen and (max-width: 1200px){
-    ul#serv li{
+    #serv .serv-single{
         flex-wrap: wrap;
         width: 49%;
     }
 
-    ul#serv li.centro{
+    #serv .serv-single .centro{
         margin: 0 auto;
     }
 }
@@ -109,7 +108,7 @@ section.main h2{
         text-decoration: underline;
     }
 
-    .projetos ul a{
+    .projetos div.center a{
         width: 49.4%;
         height: 24vw;
     }
@@ -121,7 +120,7 @@ section.main h2{
         text-align: center !important;
     }
 
-    ul#serv li{
+    #serv .serv-single{
         width: 95%;
         padding: 18px 10px;
     }
@@ -148,6 +147,11 @@ section.main h2{
 }
 
 @media screen and (max-width: 480px){
+    section.banner-header{
+        background-image: none;
+        background-image: url('../image/bannerp.jpg');
+    }
+
     .left{
         align-self: flex-start;
     }
@@ -173,7 +177,7 @@ section.main h2{
         padding: 40px 0 10px;
     }
     
-    .projetos ul a{
+    .projetos div.center a{
         width: 99%;
         height: 45vw;
     }

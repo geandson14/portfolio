@@ -65,19 +65,19 @@ header .center nav.desktop > a:hover{
 }
 
 .banner-header .text span{
-    font-size: clamp(0.8em, 0.50em + 1vw, 1.7em);;
+    font-size: clamp(0.8em, 0.50em + 1vw, 1.7em);
 }
 
 /* serviços */
 
-ul#serv{
+#serv{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: -270px;
 }
 
-ul#serv li{
+#serv .serv-single{
     width: 32%;
     margin: 0 auto;
     text-align: center;
@@ -89,11 +89,11 @@ ul#serv li{
     padding: 18px 25px;
 }
 
-#serv li .serv-info{
+#serv .serv-single .serv-info{
     height: 200px;
 }
 
-#serv li .serv-info i{
+#serv .serv-single .serv-info i{
     width: 100%;
     font-size: 60px;
     color: var(--cor2);
@@ -161,13 +161,13 @@ section.main .habilidades h2{
     background: var(--cor3);
 }
 
-.projetos ul{
+.projetos div.center{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.projetos ul a{
+.projetos div.center a{
     width: 32.8%;
     color: var(--cor5);
     margin-bottom: 10px;
@@ -176,13 +176,13 @@ section.main .habilidades h2{
     height: 17vw;
 }
 
-.projetos ul a h3{
+.projetos div.center a h3{
     background: rgba(0, 0, 0, 0.486);
     align-self: flex-end;
     width: 100%;
 }
 
-.projetos ul a .image{
+.projetos div.center a .image{
     width: 100%;
     display: flex;
     background-size: 100% 100%;
