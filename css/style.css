@@ -189,6 +189,60 @@ section.main .habilidades h2{
     background-image: url("../image/loading.png");
 }
 
+/* github */
+
+section.main .github{
+    height: 400px;
+    background-attachment: fixed;
+    background-image: url('../image/github.JPEG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+section.main .github .center{
+    background-color: rgba(45, 67, 107, 0.474);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+section.main .github .container{
+    text-align: center;
+    max-width: 600px;
+    width: 92%;
+}
+
+section.main .github i{
+    font-size: 60px;
+}
+
+section.main .github h3{
+    font-size: 30px;
+    padding: 15px 0;
+    border-bottom: 2px solid white;
+}
+
+section.main .github span{
+    font-size: 20px;
+}
+
+section.main .github a{
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    margin: 30px auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
 /* contato */
 
 .contato form{
