@@ -45,7 +45,8 @@ section.main h2{
 }
 
 .center{
-    width: 90%;
+    max-width: 1360px;
+    width: 85%;
     margin: 0 auto;
 }
 

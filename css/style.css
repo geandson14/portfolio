@@ -1,7 +1,7 @@
 /* header */
 
 section.banner-header{
-    height: 600px;
+    height: 90vh;
     background-image: url('../image/banner.jpg');
     background-size: cover;
 }
@@ -54,12 +54,11 @@ header .center nav.desktop > a:hover{
 
 .banner-header .text{
     display: flex;
-    padding: 70px 0 35px 0;
+    height: 60%;
+    justify-content: center;
     font-size: clamp(0.5em, 1em + 1vw, 2.5em);
     text-shadow: 0.1em 0.1em 0.2em black;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
     font-weight: bolder;
     color: white;
 }
@@ -197,10 +196,9 @@ section.main .github{
     background-image: url('../image/github.JPEG');
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
-section.main .github .center{
+section.main .github .opac{
     background-color: rgba(45, 67, 107, 0.474);
     height: 100%;
     width: 100%;
