@@ -16,11 +16,9 @@ html, body{
 /* variaveis */
 
 :root{
-    --cor1: #ED5967;
-    --cor2: #112e6a;
+    --cor1: #008CCF;
+    --cor2: #222222;
     --cor3: #1C4D8C;
-    --cor4: #2A7ABF;
-    --cor5: #F2D857;  
 }
 
 ul{
@@ -34,11 +32,11 @@ h1, h2, h3, a{
     text-decoration: none;
 }  
 
-section.main h2{
+/* section.main h2{
     font-size: clamp(0.5em, 1.3em + 1.5vw, 3em);
     padding: 80px 0 40px 0;
     font-weight: bolder;
-}
+} */
 
 .w50{
     width: 50%;
@@ -56,11 +54,6 @@ section.main h2{
     margin-left: 15px;
 }
 
-section.main h2{
-    font-size: clamp(0.5em, 1.3em + 1.5vw, 3em);
-    padding: 80px 0 40px 0;
-}
-
 /* reponsiva */
 
 @media screen and (max-width: 1200px){
@@ -74,7 +67,7 @@ section.main h2{
     }
 }
 
-@media screen and (max-width: 930px){
+    @media screen and (max-width: 930px){
     header .desktop{
         display: none;
     }
@@ -85,7 +78,7 @@ section.main h2{
 
     header .mobile i{
        font-size: 28px; 
-       color: white;
+       color: var(--cor3);
        cursor: pointer;
     }
 
@@ -109,11 +102,15 @@ section.main h2{
         text-decoration: underline;
     }
 
+    .background{
+        height: calc(100vh - 62px);
+    }
+
     .projetos div.center a{
         width: 49.4%;
         height: 24vw;
     }
-}
+} 
 
 @media screen and (max-width: 640px){
     .w50{

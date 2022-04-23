@@ -1,18 +1,4 @@
 /* header */
-
-section.banner-header{
-    height: 90vh;
-    background-image: url('../image/banner.jpg');
-    background-size: cover;
-}
-
-.menuFixo{
-    z-index: 9;
-    width: 100%;
-    position: fixed;
-    background: var(--cor4);
-}
-
 header .mobile{
     z-index: 9;
     display: none;
@@ -21,6 +7,7 @@ header .mobile{
 header .center{
     display: flex;
     align-items: center;
+    background: white;
     justify-content: space-between;
 }
 
@@ -30,18 +17,24 @@ header .center h1{
 }
 
 header .center a{
-    color: white;
+    color: var(--cor1);
+}
+
+header .center nav.desktop{
+    padding: 30px 0;
 }
 
 header .center nav.desktop > a{
     margin-left: 20px;
     font-weight: 700;
+    padding-bottom: 7px;
 }
 
 header .center nav.desktop .cont-btn{
-    padding: 13px 25px;
+    padding: 15px 30px;
     border-radius: 50px;
-    background: var(--cor5);
+    background: var(--cor3);
+    color: white;
 }
 
 header .center nav.desktop .cont-btn:hover{
@@ -49,286 +42,86 @@ header .center nav.desktop .cont-btn:hover{
 }
 
 header .center nav.desktop > a:hover{
-    border-bottom: 2px solid #F2D857;
+    border-bottom: 3px solid var(--cor3);
+    color: var(--cor3);
 }
 
-.banner-header .text{
+.background{
+    width: 100%;
+    height: calc(100vh - 78px);
+    padding-top: 50px;
     display: flex;
-    height: 60%;
-    justify-content: center;
-    font-size: clamp(0.5em, 1em + 1vw, 2.5em);
-    text-shadow: 0.1em 0.1em 0.2em black;
+    align-items: center;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.background .text{
+    font-size: clamp(0.5em, 1em + 1vw, 2em);
     flex-direction: column;
     font-weight: bolder;
-    color: white;
-}
-
-.banner-header .text span{
-    font-size: clamp(0.8em, 0.50em + 1vw, 1.7em);
-}
-
-/* serviços */
-
-#serv{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: -270px;
-}
-
-#serv .serv-single{
-    width: 32%;
-    margin: 0 auto;
     text-align: center;
-    border-radius: 20px;
-    border: 1px solid rgb(158, 158, 158);
-    box-shadow: 6px 6px 13px -3px #000000;
-    background: white;
-    margin-bottom: 30px;
-    padding: 18px 25px;
 }
 
-#serv .serv-single .serv-info{
-    height: 200px;
+.background .avatar{
+    width: 50%;
+    max-width: 220px;
 }
 
-#serv .serv-single .serv-info i{
+.background .img-bg{
     width: 100%;
-    font-size: 60px;
-    color: var(--cor2);
+    max-width: 620px;
 }
 
-#serv h2{
-    padding: 20px 0 15px 0;
-    font-size: clamp(0.8em, 0.9em + 1vw, 1.7em);
-}
-
-#serv p{
-    font-size: clamp(0.5em, 0.9em + 0.7vw, 1.1em);
-    color: rgb(94, 94, 94);
-}
-
-#serv a i{
-    top: 45px;
-    position: relative;
-    color: var(--cor4);
-    border-radius: 50%;
-    background: white;
-    font-size: 50px;
-}
-
-/* sessão habilidades */
-
-section.main .habilidades{
-    text-align: center;
-    padding-bottom: 100px;
-}
-
-section.main .habilidades h2{
-    color: var(--cor2);
-}
-
-.habilidades ul{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.habilidades ul li{
-    width: 33.3%;
+section.main .sobre{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
-
-.habilidades ul li i{
-    padding: 100px 0 10px 0;
-    color: var(--cor1);
-    font-size: 50px;
-}
-
-.habilidades ul li h3{
-    font-size: clamp(0.3em, 1em + 1vw, 1.5em);
-    color: rgb(133, 133, 133);
-}
-
-/* projetos */
-
-.projetos{
-    width: 100%;
-    color: var(--cor5);
-    padding-bottom: 30px;
-    background: var(--cor3);
-}
-
-.projetos div.center{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.projetos div.center a{
-    width: 32.8%;
-    color: var(--cor5);
-    margin-bottom: 10px;
-    min-height: 140px;
-    display: flex;
-    height: 17vw;
-}
-
-.projetos div.center a h3{
-    background: rgba(0, 0, 0, 0.486);
-    align-self: flex-end;
-    width: 100%;
-}
-
-.projetos div.center a .image{
-    width: 100%;
-    display: flex;
-    background-size: 100% 100%;
-    background-image: url("../image/loading.png");
-}
-
-/* github */
-
-section.main .github{
-    height: 400px;
-    background-attachment: fixed;
-    background-image: url('../image/github.JPEG');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-section.main .github .opac{
-    background-color: rgba(45, 67, 107, 0.474);
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    padding: 110px 10px;
+    width: 100%;
+    height: 500px;
     color: white;
+    background: var(--cor1);
 }
 
-section.main .github .container{
-    text-align: center;
-    max-width: 600px;
-    width: 92%;
-}
-
-section.main .github i{
-    font-size: 60px;
-}
-
-section.main .github h3{
+section.main .sobre h3{
     font-size: 30px;
-    padding: 15px 0;
-    border-bottom: 2px solid white;
+    padding-bottom: 15px;
+    font-size: clamp(1.2em, 1.2em + 1vw, 1.7em);
 }
 
-section.main .github span{
+section.main .sobre p{
+    width: 95%;
     font-size: 20px;
+    max-width: 680px;
+    text-align: center;
+    font-size: clamp(0.7em, 0.7em + 0.9vw, 1.2em);
 }
 
-section.main .github a{
-    border: 1px solid white;
-    border-radius: 5px;
-    color: white;
-    width: 100px;
-    height: 40px;
+section.main #serv{
+    background: white;
+    border-radius: 15px;
+    margin-top: -160px;
+    padding: 50px 0;
     display: flex;
-    margin: 30px auto;
-    justify-content: center;
-    align-items: center;
-
 }
 
-/* contato */
-
-.contato form{
-    width: 95%;
-    margin: 0 auto;
-    max-width: 600px;
-    padding-bottom: 70px;
+section.main .serv-single{
+    width: 33.3%;
+    padding: 20px;
+    text-align: center;
 }
 
-.contato form input,
-.contato form textarea{
-    display: block;
-    margin: 7px 0;
-    height: 40px;
-    padding: 8px;
-    border-radius: 10px;
-    border: 1px solid rgb(214, 213, 213);
-    outline: 0;
-    width: 100%;
+section.main .serv-single p{
+    padding: 15px 0;
 }
 
-.contato form textarea{
-    height: 120px;
-    resize: none;
+section.main #serv .l{
+    border-right: 1px solid #008dcf2a;
 }
 
-.contato form input[type=submit]{
-    background-color: var(--cor5);
-    color: var(--cor3);
-    font-weight: bold;
-    font-size: 17px;
-    cursor: pointer;
-}
-
-/* footer */
-
-footer{
-    background-color: var(--cor4);
-}
-
-footer .container-sobre{
-    padding: 30px 0;
-    display: flex;
-    color: white;
-}
-
-footer .contato-info{
-    padding-left: 20px;
-    border-left: 1px solid var(--cor3);
-}
-
-footer .container-sobre p,
-footer h3{
-    text-align: left;
-}
-
-footer h3{
-    font-size: 25px;
-    padding: 7px 0;
-}
-
-.sobre h3, .sobre p{
-    width: 95%;
-} 
-
-footer .rede-socias a{
-    color: white;
-    font-size: 25px;
-    font-weight: 100;
-    padding-right: 5px;
-}
-
-footer .email div i{
-    padding: 1.7px 3px 0 0; 
-}
-
-footer .copyright{
-    display: flex;
-    color: white;
-    padding: 10px 10px;
-    background-color: var(--cor3);
-    justify-content: space-between;
-    font-size: clamp(0.2em, 0.67em + 0.8vw, 0.9em);
-}
-
-footer .copyright p a{
-    color: var(--cor5);
-    font-weight: 600;
-    margin-right: 10px;
-    text-decoration: underline;
+section.main .serv-single i{
+    color: var(--cor1);
+    font-size: 60px;
+    padding-bottom: 25px;
 }

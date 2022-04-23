@@ -5,94 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Olá, sou Geandson, esse é meu portfólio web, sou estudante de TI, tenho 18 anos de idade, estudo programação a 1 ano, sou desenvolvedor full stack iniciante, desenvolvo HTML,CSS e programo JavaScript, jQuery, PHP e Python. Estou a procura de trabalho.">
     <link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="font/fontawesome/otfs/Font Awesome 6 Free-Solid-900.otf"> -->
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
     <title>Geandson Nunes - Portfólio Web</title>
 </head>
 <body>
-    <section class="banner-header" id="home">
-        <header id="header">
-            <div class="center">
-                <h1><a href="#home">PORTFÓLIO</a></h1>
-                <nav class="desktop">
+    <header id="home">
+        <div class="center">
+            <h1><a href="#home">PORTFÓLIO</a></h1>
+            <nav class="desktop">
+                <a href="#home" title="home">HOME</a>
+                <a href="#sob" title="sobre">SOBRE MIM</a>
+                <a href="#serv" title="serviços">SERVIÇOS</a>
+                <a href="#proj" title="projetos">PROJETOS</a>
+                <a href="#cont" title="contato" class="cont-btn">CONTATO</a>
+            </nav>
+            <div class="mobile">
+                <i class="fas fa-bars"></i>
+                <nav>
                     <a href="#home" title="home">HOME</a>
                     <a href="#sob" title="sobre">SOBRE MIM</a>
                     <a href="#serv" title="serviços">SERVIÇOS</a>
                     <a href="#proj" title="projetos">PROJETOS</a>
-                    <a href="#cont" title="contato" class="cont-btn" style="color: var(--cor3)">CONTATO</a>
+                    <a href="#cont" title="contato">CONTATO</a>
                 </nav>
-                <div class="mobile">
-                    <i class="fas fa-bars"></i>
-                    <nav>
-                        <a href="#home" title="home">HOME</a>
-                        <a href="#sob" title="sobre">SOBRE MIM</a>
-                        <a href="#serv" title="serviços">SERVIÇOS</a>
-                        <a href="#proj" title="projetos">PROJETOS</a>
-                        <a href="#cont" title="contato">CONTATO</a>
-                    </nav>
-                </div>
             </div>
-        </header>
-        <div class="text">
-            <h1>Olá, sou Geandson</h1>
-            <h2><span class="typed"></span></h2>
         </div>
-    </section><!-- banner-header -->
+    </header>
 
     <section class="main">
+        <div class="background">
+            <div class="text">
+                <h1>Olá, sou Geandson</h1>
+                <span class="typed"></span>
+            </div>
+            <img class="avatar" src="image/363640-200.png" alt="avatar">
+            <img class="img-bg" src="image/img-bg.png" alt="img-bg">
+        </div>
+
+        <div class="sobre">
+            <h3>Sobre Mim</h3>
+            <p>Olá, sou Geandson, estudante de TI, tenho 18 anos, estudo programação a 1 ano, sou desenvolvedor full stack, desenvolvo HTML,CSS e programo JavaScript, jQuery, PHP e Python. Estou a procura de trabalho.</p>
+        </div>
+
         <div id="serv" class="center">
-            <div class="serv-single">
+            <div class="serv-single l">
                 <div class="serv-info">
                     <i class="fas fa-window-restore"></i>
                     <h2>CRIAÇÃO DE SITE</h2>
                     <p>Criação de sites responsivos, site institucionais, sites profissionais, Landing Pages e sites pessoais, etc...</p>
+                    <p>Criação de sites responsivos, site institucionais, sites profissionais, Landing Pages e sites pessoais, etc...</p>
+                    <p>Criação de sites responsivos, site institucionais, sites profissionais, Landing Pages e sites pessoais, etc...</p>
                 </div>
-                <a href="#cont" title="contato"><i class="fas fa-arrow-circle-down"></i></a>
             </div>
-            <div class="serv-single">
+            <div class="serv-single l">
                 <div class="serv-info">
-                    <i class="fas fa-wrench"></i>
+                    <i class="fas fa-tools"></i>
                     <h2>MANUTENÇÃO DE SITE</h2>
                     <p>Melhor posicionamento de buscar do site(SEO), verificação da velocidade do site, verificação de responsividade, etc...</p>
+                    <p>Melhor posicionamento de buscar do site(SEO), verificação da velocidade do site, verificação de responsividade, etc...</p>
+                    <p>Melhor posicionamento de buscar do site(SEO), verificação da velocidade do site, verificação de responsividade, etc...</p>
                 </div>
-                <a href="#cont" title="contato"><i class="fas fa-arrow-circle-down"></i></a>
             </div>
             <div class="serv-single">
                 <div class="serv-info">
                     <i class="fas fa-cogs"></i>
                     <h2>ATUALIZAÇÃO DE SITE</h2>
                     <p>Criação de novas paginas para o site, Atualização no design do site, Adicionar novos elementos, etc...</p>
+                    <p>Criação de novas paginas para o site, Atualização no design do site, Adicionar novos elementos, etc...</p>
+                    <p>Criação de novas paginas para o site, Atualização no design do site, Adicionar novos elementos, etc...</p>
                 </div>
-                <a href="#cont" title="contato"><i class="fas fa-arrow-circle-down"></i></a> 
             </div>
-        </div><!-- serv -->
-        <div class="habilidades center">
-            <h2>Minhas Habilidades</h2>
-            <ul>
-                <li class="left">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML</h3>
-                </li>
-                <li class="right">
-                    <i class="fab fa-css3"></i>
-                    <h3>CSS</h3>
-                </li>
-                <li  class="left">
-                    <i class="fab fa-js"></i>
-                    <h3>JavaScript</h3>
-                </li>
-                <li class="align-right right">
-                    <i class="fab fa-python" style="padding-right: 18px;"></i>
-                    <h3>Python</h3>
-                </li>
-                <li class="align-right left">
-                    <i class="fab fa-php" style="margin-right: -6px;"></i>
-                    <h3>PHP</h3>
-                </li>
-            </ul>
-        </div><!-- habilidades -->
+         </div><!-- serv -->
 
-        <div class="projetos" id="proj">
+        <!--<div class="projetos" id="proj">
             <h2>PROJETOS</h2>
             <div class="center">
                 <a title="projeto" rel="noreferrer" href="https://geandson14.github.io/calcular-imc" target="_blank"><div class="image" style="background-image: url('image/calcular-imc.png');"><h3>Calculadora imc</h3></div></a>
@@ -102,9 +89,9 @@
                 <a title="projeto" rel="noreferrer" href="#proj"><div class="image"><h3>Em Breve</h3></div></a>
                 <a title="projeto" rel="noreferrer" href="#proj"><div class="image"><h3>Em Breve</h3></div></a>
             </div>
-        </div><!-- projetos  -->
+        </div>projetos  -->
 
-        <div class="github">
+        <!-- <div class="github">
             <div class="opac">
                 <div class="container">
                     <i class="fab fa-github"></i>
@@ -113,7 +100,7 @@
                     <a href="https://github.com/geandson14" title="github" target="_blank" rel="noreferrer">ACESSE</a>
                 </div>  
             </div>
-         </div><!-- github -->
+         </div>github 
 
         <div class="contato" id="cont">
             <h2>ENTRE EM CONTATO</h2>
@@ -124,7 +111,7 @@
                 <textarea placeholder="Mensagem..." required></textarea>
                 <input type="submit" value="ENVIAR" id="acao">
             </form>
-        </div><!-- contato  -->
+        </div> contato  
     </section>
 
     <footer>
@@ -151,7 +138,7 @@
             <p>©desenvolvido por <a href="https://github.com/geandson14" title="github" target="_blank" rel="noreferrer">Geandson Nunes</a></p>
             <a href="#home" title="home" style="color: white;"><i class="fas fa-chevron-up"></i></a>
         </div>    
-    </footer>
+    </footer>-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/typed.js"></script>

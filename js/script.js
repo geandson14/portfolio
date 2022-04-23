@@ -1,11 +1,3 @@
-(function () {
-    var menu = document.getElementById('header');
-    window.addEventListener('scroll', function () {
-        if (window.scrollY > 0) menu.classList.add('menuFixo');
-        else menu.classList.remove('menuFixo');
-    });
-})();
-
 $(function(){
     $('.mobile').click(function(){
         var listaMenu = $('.mobile nav');
