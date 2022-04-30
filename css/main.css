@@ -19,6 +19,7 @@ html, body{
     --cor1: #008CCF;
     --cor2: #222222;
     --cor3: #1C4D8C;
+    --cor4: #858585;
 }
 
 ul{
@@ -67,7 +68,7 @@ h1, h2, h3, a{
     }
 }
 
-    @media screen and (max-width: 930px){
+@media screen and (max-width: 900px){
     header .desktop{
         display: none;
     }
@@ -106,61 +107,40 @@ h1, h2, h3, a{
         height: calc(100vh - 62px);
     }
 
+    section.main #serv{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    section.main #serv .l{
+        border: 0;
+    }
+
+    #serv .serv-single{
+        width: 80%;
+    }
+
     .projetos div.center a{
         width: 49.4%;
         height: 24vw;
     }
 } 
 
-@media screen and (max-width: 640px){
-    .w50{
-        width: 100%;
-        text-align: center !important;
-    }
-
+@media screen and (max-width: 700px){
     #serv .serv-single{
         width: 95%;
-        padding: 18px 10px;
-    }
-
-    .projetos ul a{
-        width: 90%;
-        height: 32vw;
-        margin: 0 auto 10px;
-        max-width: 350px;
-    }
-
-    footer .container-sobre{
-        display: block;   
-    }
-
-    footer h3,
-    footer .container-sobre p{
-        text-align: center;
-    }
-
-    footer .contato-info{
-        border: 0;
     }
 }
 
-@media screen and (max-width: 480px){
-    section.banner-header{
-        background-image: none;
-        background-image: url('../image/bannerp.jpg');
-    }
 
+@media screen and (max-width: 480px){
     .left{
         align-self: flex-start;
     }
 
     .right{
         align-self: flex-end;
-    }
-
-    .align-right,
-    .align-right h3{
-        text-align: center;
     }
     
     .habilidades ul{
@@ -173,16 +153,5 @@ h1, h2, h3, a{
 
     .habilidades ul li i{
         padding: 40px 0 10px;
-    }
-    
-    .projetos div.center a{
-        width: 99%;
-        height: 45vw;
-    }
-
-    footer .email div{
-        display: flex;
-        margin-left: -10px;
-        justify-content: center;
     }
 }

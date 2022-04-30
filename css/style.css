@@ -32,13 +32,15 @@ header .center nav.desktop > a{
 
 header .center nav.desktop .cont-btn{
     padding: 15px 30px;
-    border-radius: 50px;
-    background: var(--cor3);
+   
+    background: var(--cor1);
     color: white;
 }
 
 header .center nav.desktop .cont-btn:hover{
     border: 0;
+    color: white;
+    background: var(--cor3);
 }
 
 header .center nav.desktop > a:hover{
@@ -65,6 +67,7 @@ header .center nav.desktop > a:hover{
 
 .background .avatar{
     width: 50%;
+    border-radius: 50%;
     max-width: 220px;
 }
 
@@ -112,8 +115,14 @@ section.main .serv-single{
     text-align: center;
 }
 
+section.main .serv-single h2{
+    font-size: clamp(0.8em, 0.8em + 0.9vw, 1.2em);
+    color: var(--cor4);
+}
+
 section.main .serv-single p{
     padding: 15px 0;
+    font-size: clamp(0.7em, 0.7em + 0.9vw, 1em);
 }
 
 section.main #serv .l{
@@ -124,4 +133,189 @@ section.main .serv-single i{
     color: var(--cor1);
     font-size: 60px;
     padding-bottom: 25px;
+}
+
+/* sessão habilidades */
+
+section.main .habilidades{
+    text-align: center;
+    padding-bottom: 160px;
+}
+
+section.main .habilidades h2{
+    padding-top: 50px;
+    color: var(--cor4);
+    font-size: clamp(1.2em, 1.2em + 1vw, 2em);
+}
+
+.habilidades ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.habilidades ul li{
+    width: 33.3%;
+}
+
+.habilidades ul li i{
+    padding: 100px 0 10px 0;
+    color: var(--cor1);
+    font-size: 50px;
+}
+
+.habilidades ul li h3{
+    font-size: clamp(0.8em, 0.8em + 0.9vw, 1.2em);
+    color: var(--cor4);
+}
+
+/* projetos */
+
+.projetos{
+    width: 100%;
+    color: var(--cor5);
+    padding-bottom: 30px;
+    background: var(--cor1);
+}
+
+.projetos h2{
+    padding: 70px 0 20px;
+    color: white;
+    font-size: clamp(1.2em, 1.2em + 1vw, 2em);
+}
+
+.projetos div.center{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projetos div.center a{
+    width: 32.8%;
+    color: var(--cor5);
+    margin-bottom: 10px;
+    min-height: 140px;
+    color: white;
+    display: flex;
+    height: 14vw;
+}
+
+.projetos div.center a h3{
+    background: rgba(0, 0, 0, 0.486);
+    align-self: flex-end;
+    width: 100%;
+}
+
+.projetos div.center a .image{
+    width: 100%;
+    display: flex;
+    background-size: 100% 100%;
+    background-image: url("../image/loading.png");
+}
+
+/* github */
+
+section.main .github{
+    height: 400px;
+    background-attachment: fixed;
+    background-image: url('../image/github.JPEG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.main .github .opac{
+    background-color: rgba(45, 67, 107, 0.474);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+section.main .github .container{
+    text-align: center;
+    max-width: 600px;
+    width: 92%;
+}
+
+section.main .github i{
+    font-size: 60px;
+}
+
+section.main .github h3{
+    font-size: 30px;
+    padding: 15px 0;
+    border-bottom: 2px solid white;
+}
+
+section.main .github span{
+    font-size: 20px;
+}
+
+section.main .github a{
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    margin: 30px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+/* contato */
+
+.contato{
+    position: relative;
+    top: 100px;
+    border-radius: 15px;
+    padding: 60px 0;
+    background-color: white;
+    z-index: 999999999;
+}
+
+.contato h2{
+    font-size: 40px;
+    padding-bottom: 30px;
+    font-size: clamp(0.3em, 1.3em + 1.5vw, 3em);
+}
+
+.contato form{
+    width: 95%;
+    margin: 0 auto;
+    max-width: 800px;
+    padding-bottom: 70px;
+}
+
+.contato form input,
+.contato form textarea{
+    display: block;
+    margin: 7px 0;
+    height: 50px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid rgb(214, 213, 213);
+    outline: 0;
+    width: 100%;
+}
+
+.contato form textarea{
+    height: 120px;
+    resize: none;
+}
+
+.contato form input[type=submit]{
+    background-color: var(--cor5);
+    color: var(--cor3);
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+footer{
+    background: var(--cor1);
+    height: 400px;
+    padding: 150px 0 100px;
+
 }
