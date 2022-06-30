@@ -16,19 +16,38 @@ html, body{
 /* variaveis */
 
 :root{
-    --cor1: #008CCF;
-    --cor2: #222222;
-    --cor3: #1C4D8C;
-    --cor4: #858585;
-}
+    --cor1: #333333;
+    --cor2: #1F203A;
+    --cor3: #ffa64d;
+    --cor4: #ff972e;
+    --cor5: #E5E5E5;
+    --cor6: #787878;
+} 
 
 ul{
     list-style-type: none;
 }
 
+h1{
+    font-size: clamp(0.4em, 0.9em + 1vw, 1.7em);
+}
+
+h2{
+    font-size: clamp(0.3em, 1.4em + 1.5vw, 2.8em);
+    padding-bottom: 30px;
+}
+
+h3{
+    font-size: clamp(0.4em, 1.5em + 1.5vw, 3em);
+    padding-bottom: 20px;
+}
+
+h1, h2, h3{
+    font-family: 'Gantari', sans-serif;
+}
+
 h1, h2, h3, a{
     white-space: nowrap;
-    font-weight: bold;
     text-align: center;
     text-decoration: none;
 }  
@@ -38,10 +57,6 @@ h1, h2, h3, a{
     padding: 80px 0 40px 0;
     font-weight: bolder;
 } */
-
-.w50{
-    width: 50%;
-}
 
 .center{
     max-width: 1360px;
@@ -86,20 +101,20 @@ h1, h2, h3, a{
     header .mobile nav{
         position: absolute;
         display: none;
-        width: 100%;  
-        left: 0;
+        width: 100%; 
+        top: 62px; 
+        left: 0; 
     }
 
     header .mobile a{
         text-align: center;
-        color: black;
+        background: var(--cor2);
         display: block;
-        padding: 12px 0;
-        background: white;
-        border-bottom: 1px solid black;
+        padding: 15px 0;
     }
 
     header .mobile a:hover{
+        color: var(--cor4); 
         text-decoration: underline;
     }
 
@@ -123,7 +138,11 @@ h1, h2, h3, a{
 
     .projetos div.center a{
         width: 49.4%;
-        height: 24vw;
+        padding: 5px;
+    }
+
+    .contato form{
+        padding-bottom: 0;
     }
 } 
 
@@ -131,27 +150,39 @@ h1, h2, h3, a{
     #serv .serv-single{
         width: 95%;
     }
+
+    .habilidades ul li{
+        width: 50%;
+    }
 }
 
-
 @media screen and (max-width: 480px){
-    .left{
-        align-self: flex-start;
+    .habilidades ul li i{
+        padding: 40px 0 10px;
     }
 
-    .right{
-        align-self: flex-end;
-    }
-    
-    .habilidades ul{
+    .projetos .center{
         flex-direction: column;
     }
 
-    .habilidades li{
-        margin: 0;
+    .projetos div.center a{
+        width: 100%;
     }
 
-    .habilidades ul li i{
-        padding: 40px 0 10px;
+    .contato{
+        padding: 10px;
+    }
+
+    footer .contato-info > p{
+        font-size: 18px;
+    }
+
+    footer .copyright{
+        padding: 10px;
+    }
+
+    footer .rede-socias i{
+        padding: 12px;
+        margin: 5px;
     }
 }

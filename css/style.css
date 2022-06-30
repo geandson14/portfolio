@@ -1,4 +1,9 @@
 /* header */
+
+header{
+    background: var(--cor2);
+}
+
 header .mobile{
     z-index: 9;
     display: none;
@@ -7,17 +12,16 @@ header .mobile{
 header .center{
     display: flex;
     align-items: center;
-    background: white;
     justify-content: space-between;
 }
 
-header .center h1{
+header .center .logo{
     font-size: 28px;
     margin: 15px 0;
 }
 
 header .center a{
-    color: var(--cor1);
+    color: white;
 }
 
 header .center nav.desktop{
@@ -32,15 +36,15 @@ header .center nav.desktop > a{
 
 header .center nav.desktop .cont-btn{
     padding: 15px 30px;
-   
-    background: var(--cor1);
+    border-radius: 50px;
+    background: var(--cor3);
     color: white;
 }
 
 header .center nav.desktop .cont-btn:hover{
     border: 0;
     color: white;
-    background: var(--cor3);
+    background: var(--cor4);
 }
 
 header .center nav.desktop > a:hover{
@@ -50,19 +54,21 @@ header .center nav.desktop > a:hover{
 
 .background{
     width: 100%;
-    height: calc(100vh - 78px);
-    padding-top: 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    height: calc(100vh - 78px);
     justify-content:space-between;
 }
 
 .background .text{
-    font-size: clamp(0.5em, 1em + 1vw, 2em);
+    font-size: clamp(0.5em, 1.5em + 2vw, 3em);
     flex-direction: column;
-    font-weight: bolder;
     text-align: center;
+}
+
+.background .text h1{
+    font-weight: 200;
 }
 
 .background .avatar{
@@ -83,14 +89,7 @@ section.main .sobre{
     padding: 110px 10px;
     width: 100%;
     height: 500px;
-    color: white;
-    background: var(--cor1);
-}
-
-section.main .sobre h3{
-    font-size: 30px;
-    padding-bottom: 15px;
-    font-size: clamp(1.2em, 1.2em + 1vw, 1.7em);
+    background: var(--cor5);
 }
 
 section.main .sobre p{
@@ -115,22 +114,22 @@ section.main .serv-single{
     text-align: center;
 }
 
-section.main .serv-single h2{
-    font-size: clamp(0.8em, 0.8em + 0.9vw, 1.2em);
-    color: var(--cor4);
-}
-
 section.main .serv-single p{
     padding: 15px 0;
-    font-size: clamp(0.7em, 0.7em + 0.9vw, 1em);
+    color: var(--cor6);
+    font-size: clamp(0.7em, 0.7em + 0.9vw, 1.1em);
 }
 
 section.main #serv .l{
     border-right: 1px solid #008dcf2a;
 }
 
+section.main #serv h3{
+    font-size: clamp(0.4em, 0.9em + 1vw, 1.4em);
+}
+
 section.main .serv-single i{
-    color: var(--cor1);
+    color: var(--cor3);
     font-size: 60px;
     padding-bottom: 25px;
 }
@@ -142,12 +141,6 @@ section.main .habilidades{
     padding-bottom: 160px;
 }
 
-section.main .habilidades h2{
-    padding-top: 50px;
-    color: var(--cor4);
-    font-size: clamp(1.2em, 1.2em + 1vw, 2em);
-}
-
 .habilidades ul{
     display: flex;
     flex-wrap: wrap;
@@ -157,59 +150,43 @@ section.main .habilidades h2{
     width: 33.3%;
 }
 
-.habilidades ul li i{
-    padding: 100px 0 10px 0;
-    color: var(--cor1);
-    font-size: 50px;
+.habilidades ul li p{
+    color: var(--cor6);
+    font-size: clamp(0.3em, 0.8em + 1vw, 1.5em);
+    font-weight: 600;
 }
 
-.habilidades ul li h3{
-    font-size: clamp(0.8em, 0.8em + 0.9vw, 1.2em);
-    color: var(--cor4);
+.habilidades ul li i{
+    padding: 100px 0 20px 0;
+    color: var(--cor3);
+    font-size: 60px;
+}
+
+.habilidades li span{
+    height: 10px;
+    width: 30px;
+    color: var(--cor3);
 }
 
 /* projetos */
 
 .projetos{
     width: 100%;
-    color: var(--cor5);
     padding-bottom: 30px;
-    background: var(--cor1);
 }
 
-.projetos h2{
-    padding: 70px 0 20px;
-    color: white;
-    font-size: clamp(1.2em, 1.2em + 1vw, 2em);
-}
-
-.projetos div.center{
+.projetos .center{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
-.projetos div.center a{
-    width: 32.8%;
-    color: var(--cor5);
-    margin-bottom: 10px;
-    min-height: 140px;
-    color: white;
-    display: flex;
-    height: 14vw;
+.projetos .center a{
+    width: 33.3%;
+    border: 1px solid white;
 }
 
-.projetos div.center a h3{
-    background: rgba(0, 0, 0, 0.486);
-    align-self: flex-end;
+.projetos .center img{
     width: 100%;
-}
-
-.projetos div.center a .image{
-    width: 100%;
-    display: flex;
-    background-size: 100% 100%;
-    background-image: url("../image/loading.png");
 }
 
 /* github */
@@ -242,14 +219,9 @@ section.main .github i{
     font-size: 60px;
 }
 
-section.main .github h3{
-    font-size: 30px;
-    padding: 15px 0;
-    border-bottom: 2px solid white;
-}
-
 section.main .github span{
     font-size: 20px;
+    border-top: 2px solid white;
 }
 
 section.main .github a{
@@ -264,21 +236,20 @@ section.main .github a{
     align-items: center;
 }
 
+section.main .github a:hover{
+    color: var(--cor4);
+    border: 1px solid var(--cor4);;
+}
+
 /* contato */
 
 .contato{
-    position: relative;
     top: 100px;
-    border-radius: 15px;
     padding: 60px 0;
+    position: relative;
+    border-radius: 15px;
     background-color: white;
-    z-index: 999999999;
-}
-
-.contato h2{
-    font-size: 40px;
-    padding-bottom: 30px;
-    font-size: clamp(0.3em, 1.3em + 1.5vw, 3em);
+    z-index: 9;
 }
 
 .contato form{
@@ -306,16 +277,82 @@ section.main .github a{
 }
 
 .contato form input[type=submit]{
-    background-color: var(--cor5);
-    color: var(--cor3);
+    border: 2px solid var(--cor3);
     font-weight: bold;
     font-size: 17px;
     cursor: pointer;
+    color: var(--cor3);
+}
+
+.contato form input[type=submit]:hover{
+    background-color: var(--cor4);
+    color: white;
 }
 
 footer{
-    background: var(--cor1);
-    height: 400px;
-    padding: 150px 0 100px;
+    background: var(--cor2);
+}
 
+footer .contato-info > p{
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+footer .container-sobre{
+    color: white;
+    padding: 170px 0 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer .container-sobre a{
+    color: white;
+}
+
+footer .rede-socias{
+    padding-bottom: 40px;
+}
+
+footer .rede-socias i{
+    margin: 0 10px;
+    padding: 15px;
+    font-size: clamp(1em, 1.4em + 1.4vw, 2em);
+    font-weight: 100;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+footer .rede-socias i:hover{
+    background: var(--cor4);
+    border: 1px solid var(--cor4);
+}
+
+footer .email p{
+    font-size: clamp(0.5em, 0.8em + 0.9vw, 1.1em);
+}
+
+footer .copyright{
+    padding: 20px;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--cor1);
+}
+
+footer .copyright p{
+    text-align: center;
+    font-size: clamp(0.3em, 0.75em + 0.77vw, 1em);
+    padding-right: 8px;
+}
+
+footer .copyright p a{
+    color: var(--cor3);
+}
+
+footer .copyright a:hover,
+footer .copyright a i:hover{
+    color: var(--cor4); 
+    text-decoration: underline;
 }

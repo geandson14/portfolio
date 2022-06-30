@@ -1,14 +1,15 @@
 $(function(){
-    $('.mobile').click(function(){
-        var listaMenu = $('.mobile nav');
+    $('.mobile i').click(function(){
+        listaMenu = $('.mobile nav');
         listaMenu.slideToggle();
+        
     });
 
     $('header a').add('#serv a').add('.copyright a').click(function(e){
         e.preventDefault();
         var id = $(this).attr('href'),
         targetOffset = $(id).offset().top,
-        menuHeignt = $('header').innerHeight();
+        menuHeignt = 0;
         $('html, body').animate({
             scrollTop: targetOffset - menuHeignt
         }, 500);

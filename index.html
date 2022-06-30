@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Olá, sou Geandson, esse é meu portfólio web, sou estudante de TI, tenho 18 anos de idade, estudo programação a 1 ano, sou desenvolvedor full stack iniciante, desenvolvo HTML,CSS e programo JavaScript, jQuery, PHP e Python. Estou a procura de trabalho.">
+    <link href="https://fonts.googleapis.com/css2?family=Gantari:wght@400;600&family=Oswald&family=Passion+One&family=Sriracha&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="font/fontawesome/otfs/Font Awesome 6 Free-Solid-900.otf"> -->
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
@@ -13,7 +14,7 @@
 <body>
     <header id="home">
         <div class="center">
-            <h1><a href="#home">PORTFÓLIO</a></h1>
+            <a class="logo" href="#home">PORTFÓLIO</a>
             <nav class="desktop">
                 <a href="#home" title="home">HOME</a>
                 <a href="#sob" title="sobre">SOBRE MIM</a>
@@ -36,16 +37,16 @@
 
     <section class="main">
         <div class="background">
+            <div></div>
             <div class="text">
-                <h1>Olá, sou Geandson</h1>
+                <h1>Olá, <b>sou Geandson</b></h1>
                 <span class="typed"></span>
             </div>
-            <img class="avatar" src="image/avatar.png" alt="avatar">
             <img class="img-bg" src="image/img-bg.png" alt="img-bg">
         </div>
 
-        <div class="sobre">
-            <h3>Sobre Mim</h3>
+        <div class="sobre" id="sob">
+            <h2>Sobre Mim</h2>
             <p>Olá, sou Geandson, estudante de TI, tenho 18 anos, estudo programação a 1 ano, sou desenvolvedor full stack, desenvolvo HTML,CSS e programo JavaScript, jQuery, PHP e Python. Estou a procura de trabalho.</p>
         </div>
 
@@ -53,21 +54,21 @@
             <div class="serv-single l">
                 <div class="serv-info">
                     <i class="fas fa-window-restore"></i>
-                    <h2>CRIAÇÃO DE SITE</h2>
+                    <h3>CRIAÇÃO DE SITE</h3>
                     <p>Criação de sites responsivos, sites institucionais, sites profissionais, Landing Pages e sites pessoais, etc...</p>
                 </div>
             </div>
             <div class="serv-single l">
                 <div class="serv-info">
                     <i class="fas fa-tools"></i>
-                    <h2>MANUTENÇÃO DE SITE</h2>
+                    <h3>MANUTENÇÃO DE SITE</h3>
                     <p>Melhor posicionamento de buscar do site(SEO), verificação da velocidade do site, verificação de responsividade, etc...</p>
                 </div>
             </div>
             <div class="serv-single">
                 <div class="serv-info">
                     <i class="fas fa-cogs"></i>
-                    <h2>ATUALIZAÇÃO DE SITE</h2>
+                    <h3>ATUALIZAÇÃO DE SITE</h3>
                     <p>Criação de novas paginas para o site, Atualização no design do site, Adicionar novos elementos, etc...</p>
                 </div>
             </div>
@@ -76,38 +77,42 @@
          <div class="habilidades center">
             <h2>Minhas Habilidades</h2>
             <ul>
-                <li class="left">
+                <li>
                     <i class="fab fa-html5"></i>
-                    <h3>HTML</h3>
+                    <p>HTML</p>
                 </li>
-                <li class="right">
+                <li>
                     <i class="fab fa-css3"></i>
-                    <h3>CSS</h3>
+                    <p>CSS</p>
                 </li>
-                <li  class="left">
+                <li>
                     <i class="fab fa-js"></i>
-                    <h3>JavaScript</h3>
+                    <p>JavaScript</p>
                 </li>
-                <li class="align-right right">
-                    <i class="fab fa-python" style="padding-right: 9px;"></i>
-                    <h3>Python</h3>
+                <li>
+                    <i class="fab fa-python"></i>
+                    <p>Python</p>
                 </li>
-                <li class="align-right left">
-                    <i class="fab fa-php" style="margin-right: -11px;"></i>
-                    <h3>PHP</h3>
+                <li>
+                    <i class="fab fa-php"></i>
+                    <p>PHP</p>
+                </li>
+                <li>
+                    <i class="fab fa-wordpress"></i>
+                    <p>WordPress</p>
                 </li>
             </ul>
         </div><!-- habilidades -->
 
         <div class="projetos" id="proj">
-            <h2>PROJETOS</h2>
+            <h2>Projetos</h2>
             <div class="center">
-                <a title="projeto" rel="noreferrer" href="https://geandson14.github.io/calcular-imc" target="_blank"><div class="image" style="background-image: url('image/calcular-imc.png');"><h3>Calculadora imc</h3></div></a>
-                <a title="projeto" rel="noreferrer" href="https://geandson14.github.io/cordel-moderno" target="_blank"><div class="image" style="background-image: url('image/cordel.png');"><h3>Cordel Moderno</h3></div></a>
-                <a title="projeto" rel="noreferrer" href="https://geandson14.github.io/my-skills" target="_blank"><div class="image" style="background-image: url('image/my-skills.png');"><h3>Minhas Habilidades</h3></div></a>
-                <a title="projeto" rel="noreferrer" href="#proj"><div class="image"><h3>Em Breve</h3></div></a>
-                <a title="projeto" rel="noreferrer" href="#proj"><div class="image"><h3>Em Breve</h3></div></a>
-                <a title="projeto" rel="noreferrer" href="#proj"><div class="image"><h3>Em Breve</h3></div></a>
+                <a title="projeto" rel="noreferrer" href="https://geandson14.github.io/agencia-bold" target="_blank"><img src="image/agencia-bold.png" alt="agencia-bold"></a>
+                <a title="projeto" rel="noreferrer" href="https://geandson14.github.io/cordel-moderno" target="_blank"><img src="image/cordel.png" alt="cordel"></a>
+                <a title="projeto" rel="noreferrer" href="https://geandson14.github.io/calcular-imc" target="_blank"><img src="image/calcular-imc.png" alt="calcular-imc"></a>
+                <a title="projeto" rel="noreferrer" href="#proj"><img src="image/loading.jpg" alt=""></a>
+                <a title="projeto" rel="noreferrer" href="#proj"><img src="image/loading.jpg" alt=""></a>
+                <a title="projeto" rel="noreferrer" href="#proj"><img src="image/loading.jpg" alt=""></a>
             </div>
         </div><!-- projetos -->
 
@@ -123,7 +128,7 @@
          </div><!-- github -->
 
         <div class="contato center" id="cont">
-            <h2>ENTRE EM CONTATO</h2>
+            <h2>Entre em Contato</h2>
             <form action="#cont">
                 <input type="text" placeholder="Nome..." required>
                 <input type="email" placeholder="Email..." required>
@@ -134,9 +139,10 @@
         </div><!-- contato   -->
     </section>
 
-    <!-- <footer>
+   <footer>
         <div class="container-sobre center" id="sob">
-            <div class="contato-info w50">
+            <div class="contato-info">
+                <p>Vivendo, aprendendo e subindo de nível<br> um dia de cada vez.</p>
                 <div class="rede-socias">
                     <h3>Redes Socias</h3>
                     <a title="github" rel="noreferrer"  href="https://github.com/geandson14" target="_blank"><i class="fab fa-github"></i></a>
@@ -145,7 +151,7 @@
                 </div>
                 <div class="email">
                     <h3>Entre em contato</h3>
-                    <div><i class="fas fa-envelope"></i> <span>geandsonsousa14@gmail.com</span></div>
+                    <p><i class="fas fa-envelope"></i> <span>geandsonsousa14@gmail.com</span></p>
                 </div>
             </div>
         </div>
@@ -154,7 +160,7 @@
             <p>©desenvolvido por <a href="https://github.com/geandson14" title="github" target="_blank" rel="noreferrer">Geandson Nunes</a></p>
             <a href="#home" title="home" style="color: white;"><i class="fas fa-chevron-up"></i></a>
         </div>    
-    </footer> -->
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/typed.js"></script>
