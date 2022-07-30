@@ -136,36 +136,45 @@ section.main .serv-single i{
 
 /* sessão habilidades */
 
-section.main .habilidades{
+section.main .habilidades .center{
     text-align: center;
+    display: flex;
     padding-bottom: 160px;
+}
+
+.habilidades .hab{
+    width: 45%;
 }
 
 .habilidades ul{
     display: flex;
-    flex-wrap: wrap;
 }
 
-.habilidades ul li{
-    width: 33.3%;
+.habilidades li{
+    width: 100px;
+    margin: 10px;
+    height: 100px;
+    display: flex;
+    cursor: pointer;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--cor5);
 }
 
-.habilidades ul li p{
-    color: var(--cor6);
-    font-size: clamp(0.3em, 0.8em + 1vw, 1.5em);
-    font-weight: 600;
+.habilidades li:hover{
+    background: var(--cor5);
 }
 
-.habilidades ul li i{
-    padding: 100px 0 20px 0;
+.habilidades li i{
     color: var(--cor3);
-    font-size: 60px;
+    font-size: 70px;
 }
 
-.habilidades li span{
-    height: 10px;
-    width: 30px;
-    color: var(--cor3);
+.habilidades .desc{
+    padding: 10px 0;
+    text-align: left;
+    font-size: clamp(0.7em, 0.7em + 0.9vw, 1.5em);
 }
 
 /* projetos */
