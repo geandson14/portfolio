@@ -18,8 +18,8 @@ html, body{
 :root{
     --cor1: #333333;
     --cor2: #1F203A;
-    --cor3: #ffa64d;
-    --cor4: #ff972e;
+    --cor3: #ffa800;
+    --cor4: #D98F00;
     --cor5: #E5E5E5;
     --cor6: #787878;
 } 
@@ -29,12 +29,12 @@ ul{
 }
 
 h1{
-    font-size: clamp(0.4em, 0.9em + 1vw, 1.7em);
+    font-size: clamp(0.7em, 1.8em + 2vw, 4em);
 }
 
 h2{
     font-size: clamp(0.3em, 1.4em + 1.5vw, 2.8em);
-    padding-bottom: 70px;
+    padding-bottom: 40px;
 }
 
 h3{
@@ -52,23 +52,18 @@ h1, h2, h3, a{
     text-decoration: none;
 }  
 
-/* section.main h2{
-    font-size: clamp(0.5em, 1.3em + 1.5vw, 3em);
-    padding: 80px 0 40px 0;
-    font-weight: bolder;
-} */
-
-.align-right,
-.align-right h3{
-    text-align: right;
-    margin-left: 15px;
-}
-
-
 .center{
     max-width: 1280px;
     width: 85%;
     margin: 0 auto;
+}
+
+/* animações */
+
+@keyframes is-bouncing{
+    to{
+        transform: translateY(30px);
+    }
 }
 
 /* reponsiva */
@@ -82,11 +77,19 @@ h1, h2, h3, a{
     #serv .serv-single .centro{
         margin: 0 auto;
     }
+
+    header .desktop{
+        flex-direction: row-reverse;
+    }
+
+    header .desktop .email{ 
+        display:none !important;
+    }
 }
 
 @media screen and (max-width: 900px){
-    header .desktop{
-        display: none;
+    header .desktop{ 
+        display:none !important;
     }
 
     header .mobile{
@@ -103,15 +106,16 @@ h1, h2, h3, a{
         position: absolute;
         display: none;
         width: 100%; 
-        top: 62px; 
+        top: 92px; 
         left: 0; 
     }
 
     header .mobile a{
-        text-align: center;
-        background: var(--cor2);
         display: block;
         padding: 15px 0;
+        background: white;
+        text-align: center;
+        border-top: 1px solid rgb(198, 198, 198);
     }
 
     header .mobile a:hover{
