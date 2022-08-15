@@ -15,14 +15,24 @@ html, body{
 
 /* variaveis */
 
-:root{
+/* :root{
     --cor1: #333333;
     --cor2: #1F203A;
     --cor3: #ffa800;
     --cor4: #D98F00;
     --cor5: #E5E5E5;
     --cor6: #787878;
-} 
+}  */
+
+
+:root{
+    --cor1: #151515;
+    --cor2: #1F203A;
+    --cor3: #787878;
+    --cor4: #00768c;
+    --cor5: #00ACCC;
+    --cor6: #EBEBEB;
+}
 
 ul{
     list-style-type: none;
@@ -33,6 +43,7 @@ h1{
 }
 
 h2{
+    color: var(--cor5);
     font-size: clamp(0.3em, 1.4em + 1.5vw, 2.8em);
     padding-bottom: 40px;
 }
@@ -69,6 +80,10 @@ h1, h2, h3, a{
 /* reponsiva */
 
 @media screen and (max-width: 1200px){
+    .background{
+        background-image: url("/portfolio/image/backgound-media.jpeg");
+    }
+
     #serv .serv-single{
         flex-wrap: wrap;
         width: 49%;
@@ -141,9 +156,10 @@ h1, h2, h3, a{
         width: 80%;
     }
 
-    .projetos div.center a{
-        width: 49.4%;
-        padding: 5px;
+    .projetos div.center a,
+    .projetos .center .em-breve{
+        width: 48.536%;
+        margin: 3px;
     }
 
     .contato form{
@@ -152,6 +168,10 @@ h1, h2, h3, a{
 } 
 
 @media screen and (max-width: 700px){
+    .background{
+        background-image: url("/portfolio/image/backgound-pequena.jpeg");
+    }
+
     #serv .serv-single{
         width: 95%;
     }
@@ -170,12 +190,21 @@ h1, h2, h3, a{
         flex-direction: column;
     }
 
-    .projetos div.center a{
+    .projetos div.center a,
+    .projetos .center .em-breve{
         width: 100%;
     }
 
     .contato{
         padding: 10px;
+    }
+
+    .contato form .cont{
+        flex-direction: column;
+    }
+    
+    .contato form .cont input{
+        width: 100%;
     }
 
     footer .contato-info > p{

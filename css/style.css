@@ -112,7 +112,7 @@ header nav.desktop a:hover{
 }
 
 .background .texto .btn{
-    border: 2px solid var(--cor3);
+    border: 3px solid var(--cor3);
     color: white;
     font-weight: bold;
     cursor: pointer;
@@ -124,7 +124,7 @@ header nav.desktop a:hover{
 }
 
 .background .texto .btn:hover{
-    background: var(--cor3);
+    border: 3px solid var(--cor4);
     transition: 0.5s;
 }
 
@@ -146,7 +146,7 @@ section.main .sobre{
     padding: 110px 10px;
     width: 100%;
     height: 500px;
-    background: var(--cor5);
+    background: var(--cor6);
 }
 
 section.main .sobre p{
@@ -173,7 +173,7 @@ section.main .serv-single{
 
 section.main .serv-single p{
     padding: 15px 0;
-    color: var(--cor6);
+    color: var(--cor3);
     font-size: clamp(0.7em, 0.7em + 0.9vw, 1.1em);
 }
 
@@ -186,7 +186,7 @@ section.main #serv h3{
 }
 
 section.main .serv-single i{
-    color: var(--cor3);
+    color: var(--cor4);
     font-size: 60px;
     padding-bottom: 25px;
 }
@@ -212,14 +212,14 @@ section.main .habilidades .center{
 }
 
 .habilidades ul li p{
-    color: var(--cor6);
+    color: var(--cor3);
     font-size: clamp(0.3em, 0.8em + 1vw, 1.5em);
     font-weight: 600;
 }
 
 .habilidades ul li i{
     padding: 100px 0 20px 0;
-    color: var(--cor3);
+    color: var(--cor4);
     font-size: 60px;
 }
 
@@ -233,22 +233,31 @@ section.main .habilidades .center{
 
 .projetos{
     width: 100%;
-    padding-bottom: 30px;
+    padding-bottom: 100px;
 }
 
 .projetos .center{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .projetos .center a{
-    width: 33.3%;
-    border-radius: 50%;
+    width: 32%;
+    margin: 5px;
+    border-radius: 20px;
     border: 1px solid white;
 }
 
 .projetos .center img{
+    -webkit-box-shadow: 0px 0px 10px -2px #000000; 
+    box-shadow: 0px 0px 10px -2px #000000;
+    border-radius: 20px;
     width: 100%;
+}
+
+.projetos .center img:hover{
+    filter: brightness(90%);
 }
 
 /* github */
@@ -257,24 +266,30 @@ section.main .github{
     height: 400px;
     background-attachment: fixed;
     background-image: url('../image/github.JPEG');
+    border: 1px solid var(--cor5);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 section.main .github .opac{
-    background-color: rgba(45, 67, 107, 0.474);
+    background-color: rgba(3, 18, 44, 0.522);
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    padding: 0;
 }
 
 section.main .github .container{
     text-align: center;
     max-width: 600px;
-    width: 92%;
+    width: 100%;
+}
+
+section.main .github h2{
+    padding-bottom: 25px;
 }
 
 section.main .github i{
@@ -282,8 +297,10 @@ section.main .github i{
 }
 
 section.main .github span{
-    font-size: 20px;
+    font-size: clamp(0.3em,1em + 0.8vw, 1.6em);
     border-top: 2px solid white;
+    text-align: center;
+    width: 100%;
 }
 
 section.main .github a{
@@ -301,38 +318,64 @@ section.main .github a{
 section.main .github a:hover{
     transition: 0.5s;
     color: var(--cor4);
+    border: 1px solid var(--cor5);;
+}
 
-    border: 1px solid var(--cor4);;
+
+
+footer{
+    background: var(--cor1);
 }
 
 /* contato */
 
-.contato{
-    top: 100px;
-    padding: 60px 0;
-    position: relative;
-    border-radius: 15px;
-    background-color: white;
-    z-index: 9;
+footer .contato{
+    padding: 120px 0 0;
+}
+
+.contato .center{
+    background-color: var(--cor1);
 }
 
 .contato form{
     width: 95%;
     margin: 0 auto;
     max-width: 800px;
-    padding-bottom: 70px;
+}
+
+
+.contato h2{
+    padding: 0;
+}
+
+.contato p{
+    font-size: 18px;
+    color: var(--cor3);
+    text-align: center;
+    padding: 10px 0 30px;
 }
 
 .contato form input,
 .contato form textarea{
     display: block;
-    margin: 7px 0;
     height: 50px;
-    padding: 8px;
-    border-radius: 10px;
-    border: 1px solid rgb(214, 213, 213);
+    margin: 10px 0;
+    padding: 15px;
+    background: var(--cor1);
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     outline: 0;
     width: 100%;
+    color: white;
+}
+
+.contato form .cont{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contato form .cont input{
+    width: 48%;
 }
 
 .contato form textarea{
@@ -340,22 +383,28 @@ section.main .github a:hover{
     resize: none;
 }
 
+.contato form input:focus,
+.contato form textarea:focus{
+    border-bottom: 1px solid var(--cor5);
+}
+
 .contato form input[type=submit]{
-    border: 2px solid var(--cor3);
+    border: 2px solid var(--cor5);
+    background: var(--cor5);
+    border-radius: 10px;
+    color: var(--cor5);
     font-weight: bold;
+    margin-top: 50px;
     font-size: 17px;
     cursor: pointer;
-    color: var(--cor3);
+    color: white;
+    height: 55px;
 }
 
 .contato form input[type=submit]:hover{
-    background: var(--cor3);
+    border: 3px solid var(--cor4);
+    background: var(--cor4);
     transition: 0.5s;
-    color: white;
-}
-
-footer{
-    background: var(--cor2);
 }
 
 footer .contato-info > p{
@@ -363,10 +412,16 @@ footer .contato-info > p{
     padding-bottom: 30px;
 }
 
+footer .contato-info h3{
+    color: var(--cor5);
+    font-size: clamp(0.4em, 1.5em + 1.5vw, 2.3em);
+}
+
 footer .container-sobre{
     color: white;
-    padding: 170px 0 60px;
+    padding: 120px 0 60px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
 }
@@ -382,20 +437,23 @@ footer .rede-socias{
 footer .rede-socias i{
     margin: 0 10px;
     padding: 15px;
+    color: var(--cor3);
     font-size: clamp(1em, 1.4em + 1.4vw, 2em);
     font-weight: 100;
     border-radius: 50%;
-    border: 1px solid white;
+    border: 1px solid var(--cor3);
 }
 
 footer .rede-socias i:hover{
-    background: var(--cor4);
-    border: 1px solid var(--cor4);
+    color: white;
+    background: var(--cor5);
+    border: 1px solid var(--cor5);
     transition: 0.5s;
 }
 
 footer .email p{
     font-size: clamp(0.5em, 0.8em + 0.9vw, 1.1em);
+    color: var(--cor3);
 }
 
 footer .copyright{
@@ -405,20 +463,25 @@ footer .copyright{
     align-items: center;
     justify-content: space-between;
     background: var(--cor1);
+    border-top: 1px solid #7878782e;
 }
 
 footer .copyright p{
     text-align: center;
     font-size: clamp(0.3em, 0.75em + 0.77vw, 1em);
     padding-right: 8px;
+    color: var(--cor3);
 }
 
 footer .copyright p a{
-    color: var(--cor3);
+    color: var(--cor5);
 }
 
 footer .copyright a:hover,
 footer .copyright a i:hover{
     color: var(--cor4); 
+}
+
+footer .copyright a:hover{
     text-decoration: underline;
 }

@@ -15,9 +15,9 @@ $(function(){
         }, 500);
     });
 
-    $('#acao').click(function(){
-        alert('ATENÇÃO! O formulario de contato não será enviado por limitação da github, entre em contato pelo o meu E-mail abaixo ou nas redes sociais.')
-    });
+    // $('#acao').click(function(){
+    //     alert('ATENÇÃO! O formulario de contato não será enviado por limitação da github, entre em contato pelo o meu E-mail abaixo ou nas redes sociais.')
+    // });
 
     var typed = new Typed(".typed", {
         strings: ["Sou desenvolvedor","Front-end", "Full stack"],
@@ -41,8 +41,8 @@ $(function(){
 //     '<p>Github</p> <br> <p>É uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. </p> <br>'
 // ]
 
-skills.forEach((elemento, index)=>{
-    elemento.addEventListener('mouseout', (evento, elemento,) => {
-        descricao.innerHTML = '/* Passe o mouse por cima de alguma habilidade para ler a descrição */';
-    })
-});
+// skills.forEach((elemento, index)=>{
+//     elemento.addEventListener('mouseout', (evento, elemento,) => {
+//         descricao.innerHTML = '/* Passe o mouse por cima de alguma habilidade para ler a descrição */';
+//     })
+// });

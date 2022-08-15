@@ -15,7 +15,7 @@
 <body>
     <header id="home">
         <div class="center">
-            <a class="logo" href="#home"><img src="image/logo.png" alt=""></a>
+            <a class="logo" href="#home"><img src="image/logo.png" alt="logo"></a>
             <nav class="desktop">
                 <div class="menu">
                     <a href="#home" title="home">HOME</a>
@@ -119,12 +119,24 @@
         <div class="projetos" id="proj">
             <h2>Projetos</h2>
             <div class="center">
-                <a title="projeto" rel="noreferrer" href="https://geandson14.github.io/agencia-bold" target="_blank"><img src="image/agencia-bold.png" alt="agencia-bold"></a>
-                <a title="projeto" rel="noreferrer" href="https://geandson14.github.io/cordel-moderno" target="_blank"><img src="image/cordel.png" alt="cordel"></a>
-                <a title="projeto" rel="noreferrer" href="https://geandson14.github.io/calcular-imc" target="_blank"><img src="image/calcular-imc.png" alt="calcular-imc"></a>
-                <a title="projeto" rel="noreferrer" href="#proj"><img src="image/loading.jpg" alt=""></a>
-                <a title="projeto" rel="noreferrer" href="#proj"><img src="image/loading.jpg" alt=""></a>
-                <a title="projeto" rel="noreferrer" href="#proj"><img src="image/loading.jpg" alt=""></a>
+                <a title="projeto" rel="noreferrer" href="https://geandson14.github.io/agencia-bold" target="_blank">
+                    <div class="opac-proj"><img src="image/agencia-bold.jpg" alt="agencia-bold"></div>
+                </a>
+                <a title="projeto" rel="noreferrer" href="https://geandson14.github.io/cordel-moderno" target="_blank">
+                    <div class="opac-proj"><img src="image/cordel.jpg" alt="cordel"></div>
+                </a>
+                <a title="projeto" rel="noreferrer" href="#">
+                    <div class="opac-proj"><img src="image/em-breve.png" alt="em-breve"></div>
+                </a>
+                <a title="projeto" rel="noreferrer" href="#">
+                    <div class="opac-proj"><img src="image/em-breve.png" alt="em-breve"></div>
+                </a>
+                <a title="projeto" rel="noreferrer" href="#">
+                    <div class="opac-proj"><img src="image/em-breve.png" alt="em-breve"></div>
+                </a>
+                <a title="projeto" rel="noreferrer" href="#">
+                    <div class="opac-proj"><img src="image/em-breve.png" alt="em-breve"></div>
+                </a>
             </div>
         </div><!-- projetos -->
 
@@ -132,33 +144,38 @@
             <div class="opac">
                 <div class="container">
                     <i class="fab fa-github"></i>
-                    <h3>Repositórios</h3>
+                    <h2>Repositórios</h2>
                     <span>github.com/geandson14</span>
                     <a href="https://github.com/geandson14" title="github" target="_blank" rel="noreferrer">ACESSE</a>
                 </div>  
             </div>
          </div><!-- github -->
-
-        <div class="contato center" id="cont">
-            <h2>Entre em Contato</h2>
-            <form action="#cont">
-                <input type="text" placeholder="Nome..." required>
-                <input type="email" placeholder="Email..." required>
-                <input type="text" placeholder="Assunto..." required>
-                <textarea placeholder="Mensagem..." required></textarea>
-                <input type="submit" value="ENVIAR" id="acao">
-            </form>
-        </div><!-- contato   -->
     </section>
 
    <footer>
+        <div class="contato center" id="cont">
+            <h2>Entre em Contato</h2>
+            <p>Preencha o formulário abaixo</p>
+            <form action="https://api.staticforms.xyz/submit" method="POST">
+                <input type="hidden" name="accessKey" value="30d23c77-083a-438e-a459-784fd08fc324">
+                <input type="text" name="name" placeholder="Nome..." required>
+                <div class="cont">
+                    <input type="email" name="email" placeholder="Email..." required>
+                    <input type="tel" name="phone" placeholder="Telefone...">
+                </div>
+                <input type="text" name="subject" placeholder="Assunto..." required>
+                <textarea name="message" placeholder="Mensagem..." required></textarea>
+                <input type="hidden" name="redirectTo" value="https://geandson14.github.io/portfolio/sucesso"> 
+                <input type="submit" value="ENVIAR" id="acao">
+            </form>
+        </div><!-- contato   -->
         <div class="container-sobre center" id="sob">
             <div class="contato-info">
                 <p>Vivendo, aprendendo e subindo de nível<br> um dia de cada vez.</p>
                 <div class="rede-socias">
                     <h3>Redes Socias</h3>
                     <a title="github" rel="noreferrer"  href="https://github.com/geandson14" target="_blank"><i class="fab fa-github"></i></a>
-                    <a title="instagram" rel="noreferrer"  href="https://www.instagram.com/_geandson14/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a title="instagram" rel="noreferrer"  href="https://www.instagram.com/geandsonweb/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a title="linkedin" rel="noreferrer" href="https://www.linkedin.com/in/geandson-nunes-b14251219/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
                 <div class="email">
@@ -175,7 +192,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
-    <script src="js/script.js"></script>
     <!-- <script src="js/typed.js"></script> -->
+    <script src="js/script.js"></script>
 </body>
 </html>
