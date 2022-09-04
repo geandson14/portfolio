@@ -1,13 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Olá, sou Geandson, esse é meu portfólio web, sou estudante de TI, tenho 18 anos de idade, estudo programação a 1 ano, sou desenvolvedor full stack iniciante, desenvolvo HTML,CSS e programo JavaScript, jQuery, PHP e Python. Estou a procura de trabalho.">
-    <link href="https://fonts.googleapis.com/css2?family=Gantari:wght@400;600&family=Oswald&family=Passion+One&family=Sriracha&display=swap" rel="stylesheet">
+    <meta name="description" content="Olá, sou Geandson, esse é meu portfólio web, sou estudante de TI, tenho 18 anos de idade, estudo programação a 2 ano, sou desenvolvedor full stack iniciante, desenvolvo HTML,CSS e programo JavaScript, jQuery, PHP e Python. Estou a procura de trabalho.">
     <link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="font/fontawesome/otfs/Font Awesome 6 Free-Solid-900.otf"> -->
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
     <title>Geandson Nunes - Portfólio Web</title>
@@ -19,25 +16,29 @@
             <nav class="desktop">
                 <div class="menu">
                     <a href="#home" title="home">HOME</a>
-                    <a href="#sob" title="sobre">SOBRE MIM</a>
-                    <a href="#serv" title="serviços">SERVIÇOS</a>
-                    <a href="#proj" title="projetos">PROJETOS</a>
-                    <a href="#cont" title="contato" class="cont-btn">CONTATO</a>
+                    <a href="#sobre" title="sobre">SOBRE MIM</a>
+                    <a href="#servicos" title="serviços">SERVIÇOS</a>
+                    <a href="#projetos" title="projetos">PROJETOS</a>
+                    <a href="#contato" title="contato">CONTATO</a>
                 </div>
                 <div class="email">
-                    <p><span>gnwebcontato@gmail.com</span></p>
+                    <a title="whatsapp" rel="noreferrer"  href="https://api.whatsapp.com/send?phone=558791568173" target="_blank"><i class="fab fa-whatsapp"> +55 (87)9156-8173</i></a>
                 </div>
             </nav>
-            <div class="mobile">
-                <i class="fas fa-bars"></i>
-                <nav>
+            <nav class="mobile">
+                <div class="hamburger">
+                    <span class="line" id="line1"></span>
+                    <span class="line" id="line2"></span>
+                    <span class="line" id="line3"></span>
+                </div>
+                <div class="menu">
                     <a href="#home" title="home">HOME</a>
-                    <a href="#sob" title="sobre">SOBRE MIM</a>
-                    <a href="#serv" title="serviços">SERVIÇOS</a>
-                    <a href="#proj" title="projetos">PROJETOS</a>
-                    <a href="#cont" title="contato">CONTATO</a>
-                </nav>
-            </div>
+                    <a href="#sobre" title="sobre">SOBRE MIM</a>
+                    <a href="#servicos" title="serviços">SERVIÇOS</a>
+                    <a href="#projetos" title="projetos">PROJETOS</a>
+                    <a href="#contato" title="contato">CONTATO</a>
+                </div>
+            </nav>
         </div>
     </header>
 
@@ -49,23 +50,23 @@
                     <span>PORTFÓLIO</span>
                     <h1>Geandson Nunes</h1>
                     <p>DESENVOLVEDOR FULL-STACK | WORDPRESS</p>
-                    <a href="#sob" class="btn">SAIBA MAIS<i class="fas fa-angle-down"></i></a>
+                    <a href="#sobre" title="sobre" class="btn">SAIBA MAIS<i class="fas fa-angle-down"></i></a>
                 </div>
                 <div class="arrow"><img src="image/arrow-down.png" alt="arrow-down"></div>
             </div>
         </div>
 
-        <div class="sobre" id="sob">
+        <div class="sobre" id="sobre">
             <h2>Sobre Mim</h2>
-            <p>Olá, sou Geandson, estudante de TI, tenho 18 anos, estudo programação a quase 2 anos, sou desenvolvedor full stack, desenvolvo HTML,CSS e programo JavaScript, jQuery, PHP e Python.</p>
+            <p>Olá, sou Geandson, estudante de TI, tenho 18 anos, estudo programação a 2 ano, sou desenvolvedor full stack, desenvolvo HTML,CSS e programo JavaScript, jQuery, PHP e Python.</p>
         </div>
 
-        <div id="serv" class="center">
+        <div id="servicos" class="center">
             <div class="serv-single l">
                 <div class="serv-info">
                     <i class="fas fa-window-restore"></i>
                     <h3>CRIAÇÃO DE SITE</h3>
-                    <p>Criação de sites responsivos, sites institucionais, sites profissionais, Landing Pages e sites pessoais, etc...</p>
+                    <p>Criação de sites responsivos, sites institucionais, sites profissionais, Landing Pages, sites pessoais, etc...</p>
                 </div>
             </div>
             <div class="serv-single l">
@@ -116,7 +117,7 @@
             </div>
         </div><!-- habilidades -->
 
-        <div class="projetos" id="proj">
+        <div class="projetos" id="projetos">
             <h2>Projetos</h2>
             <div class="center">
                 <a title="projeto" rel="noreferrer" href="https://geandson14.github.io/agencia-bold" target="_blank">
@@ -153,7 +154,7 @@
     </section>
 
    <footer>
-        <div class="contato center" id="cont">
+        <div class="contato center" id="contato">
             <h2>Entre em Contato</h2>
             <p>Preencha o formulário abaixo</p>
             <form action="https://api.staticforms.xyz/submit" method="POST">
@@ -169,30 +170,29 @@
                 <input type="submit" value="ENVIAR" id="acao">
             </form>
         </div><!-- contato   -->
+
         <div class="container-sobre center" id="sob">
             <div class="contato-info">
                 <p>Vivendo, aprendendo e subindo de nível<br> um dia de cada vez.</p>
                 <div class="rede-socias">
                     <h3>Redes Socias</h3>
+                    <a title="whatsapp" rel="noreferrer"  href="https://api.whatsapp.com/send?phone=558791568173" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a title="instagram" rel="noreferrer"  href="https://www.instagram.com/gn_web/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a title="github" rel="noreferrer"  href="https://github.com/geandson14" target="_blank"><i class="fab fa-github"></i></a>
-                    <a title="instagram" rel="noreferrer"  href="https://www.instagram.com/geandsonweb/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a title="linkedin" rel="noreferrer" href="https://www.linkedin.com/in/geandson-nunes-b14251219/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
                 <div class="email">
                     <h3>Entre em contato</h3>
                     <p><i class="fas fa-envelope"></i> <span>gnwebcontato@gmail.com</span></p>
+                    <p><i class="fab fa-whatsapp"></i> <span>+55 (87)9156-8173</span></p>
                 </div>
             </div>
         </div>
         <div class="copyright">
             <div></div>
-            <p>©desenvolvido por <a href="https://github.com/geandson14" title="github" target="_blank" rel="noreferrer">Geandson Nunes</a></p>
-            <a href="#home" title="home" style="color: white;"><i class="fas fa-chevron-up"></i></a>
+            <p>©desenvolvido por <a href="https://www.instagram.com/gn_web/" title="github" target="_blank" rel="noreferrer">Geandson Nunes</a></p>
+            <a href="#home" class="home" title="home" style="color: white;"><i class="fas fa-chevron-up"></i></a>
         </div>    
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
-    <!-- <script src="js/typed.js"></script> -->
     <script src="js/script.js"></script>
 </body>
 </html>

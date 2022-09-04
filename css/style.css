@@ -1,14 +1,14 @@
 /* header */
 
 header .mobile{
-    z-index: 9;
     display: none;
 }
 
 header .center{
-    display: flex;
     height: 92px;
+    display: flex;
     align-items: center;
+    background: white;
     justify-content: space-between;
 }
 
@@ -27,36 +27,30 @@ header .center .desktop{
     width: 85%;
 }
 
-header .center .menu{
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-
-header .desktop .email{
-    padding-left: 20px;  
-}
-
-header .email p{
+header .email a{
     color: rgb(103, 103, 103);
     display: flex;
+    cursor: pointer;
+    font-weight: 700;
     flex-wrap: nowrap;
+    padding-left: 20px;  
+    font-size: clamp(0.6em, 0.7em + 0.6vw, 1.3em);
 }
 
-header .email p:hover{
-    color: rgb(60, 60, 60);
+header .email a:hover{
+    color: #29AA01;
     transition: 0.5s;
 }
 
-header .center nav.desktop a{
+header .center nav.desktop .menu a{
     margin-left: 20px;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 1em;
 }
 
-header nav.desktop a:hover{
-    border-bottom: 3px solid var(--cor3);
-    color: var(--cor3);
+header nav.desktop .menu a:hover{
+    border-bottom: 3px solid var(--cor5);
+    color: var(--cor5);
     margin-bottom: -3px;
 }
 
@@ -85,30 +79,28 @@ header nav.desktop a:hover{
  
 .opac img,
 .opac i{
-    width: 60px; 
+    width: 40px; 
 }
+
 
 .background .texto{
     color: white;
     text-align: center;
     flex-direction: column;
     justify-content: center;
+    text-shadow: 4px 4px 10px #000000;
 }
 
 .background .texto span{
     font-weight: 600;
-    font-size: 20px;
-    color: white;
+    font-size: clamp(0.7em, 1em + 1vw, 1.6em);
+    color: var(--cor5);
+    
 }
 
 .background .texto p{
     font-size: clamp(0.4em, 0.8em + 1vw, 1.2em);
     margin: 10px 0 40px;
-}
-
-.background .texto h1,
-.background .texto p{
-    text-shadow: 4px 4px 10px #000000;
 }
 
 .background .texto .btn{
@@ -149,6 +141,10 @@ section.main .sobre{
     background: var(--cor6);
 }
 
+section.main .sobre h2{
+    color: var(--cor4);
+}
+
 section.main .sobre p{
     width: 95%;
     font-size: 20px;
@@ -157,7 +153,7 @@ section.main .sobre p{
     font-size: clamp(0.7em, 0.7em + 0.9vw, 1.2em);
 }
 
-section.main #serv{
+section.main #servicos{
     background: white;
     border-radius: 15px;
     margin-top: -160px;
@@ -177,11 +173,11 @@ section.main .serv-single p{
     font-size: clamp(0.7em, 0.7em + 0.9vw, 1.1em);
 }
 
-section.main #serv .l{
+section.main #servicos .l{
     border-right: 1px solid #008dcf2a;
 }
 
-section.main #serv h3{
+section.main #servicos h3{
     font-size: clamp(0.4em, 0.9em + 1vw, 1.4em);
 }
 
@@ -195,11 +191,12 @@ section.main .serv-single i{
 
 section.main .habilidades .center{
     text-align: center;
-    padding-bottom: 160px;
+    background: white;
+    padding-bottom: 150px;
 }
 
 .habilidades h2{
-    padding-bottom: 10px;
+    padding: 30px 0 10px;
 }
 
 .habilidades ul{
@@ -290,6 +287,7 @@ section.main .github .container{
 
 section.main .github h2{
     padding-bottom: 25px;
+    color: var(--cor5);
 }
 
 section.main .github i{
@@ -321,13 +319,11 @@ section.main .github a:hover{
     border: 1px solid var(--cor5);;
 }
 
-
+/* footer */
 
 footer{
     background: var(--cor1);
 }
-
-/* contato */
 
 footer .contato{
     padding: 120px 0 0;
@@ -346,6 +342,7 @@ footer .contato{
 
 .contato h2{
     padding: 0;
+    color: var(--cor5);
 }
 
 .contato p{
@@ -415,6 +412,10 @@ footer .contato-info > p{
 footer .contato-info h3{
     color: var(--cor5);
     font-size: clamp(0.4em, 1.5em + 1.5vw, 2.3em);
+}
+
+footer .contato-info .email p{
+    padding-bottom: 10px;
 }
 
 footer .container-sobre{

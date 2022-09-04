@@ -1,48 +1,46 @@
-$(function(){
-    $('.mobile i').click(function(){
-        listaMenu = $('.mobile nav');
-        listaMenu.slideToggle();
-        
-    });
+const menuLinks = document.querySelectorAll('header .menu a');
 
-    $('header a').add('#serv a').add('.copyright a').add('.texto a').click(function(e){
-        e.preventDefault();
-        var id = $(this).attr('href'),
-        targetOffset = $(id).offset().top,
-        menuHeignt = 0;
-        $('html, body').animate({
-            scrollTop: targetOffset - menuHeignt
-        }, 500);
-    });
+function getDistanceFromTheTop(element) {
+  const id = element.getAttribute("href");
+  return document.querySelector(id).offsetTop;
+}
 
-    // $('#acao').click(function(){
-    //     alert('ATENÇÃO! O formulario de contato não será enviado por limitação da github, entre em contato pelo o meu E-mail abaixo ou nas redes sociais.')
-    // });
+function scrollToSection(event) {
+  event.preventDefault();
+  const distanceFromTheTop = getDistanceFromTheTop(event.target);
+  smoothScrollTo(0, distanceFromTheTop);
+}
 
-    var typed = new Typed(".typed", {
-        strings: ["Sou desenvolvedor","Front-end", "Full stack"],
-        smartBackspace: true,
-        loopCount: Infinity,
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true,
-        startDelay: 1000
-    });
-})
+menuLinks.forEach((link) => {
+  link.addEventListener("click", scrollToSection);
+});
 
-// const skills = document.querySelectorAll('.hab ul li');
-// const descricao = document.querySelector('.desc');
-// const sobreSkill = [
-//     '<p>HTML</p> <br> <p>É uma linguagem de marcação utilizada na construção de páginas na Web.</p> <br>',
-//     '<p>CSS</p> <br> <p>É um mecanismo para adicionar estilo a um documento web.</p> <br>',
-//     '<p>JavaScript</p> <br> <p>É uma linguagem de programação. Juntamente com HTML e CSS, é uma das três principais tecnologias da web.</p> <br>',
-//     '<p>Styled Components</p> <br> <p>É uma biblioteca (lib) que utiliza o conceito de CSS-in-JS, ou seja, que nos permite escrever códigos CSS dentro do Javascript.</p> <br>',
-//     '<p>Git</p> <br> <p>É um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software.</p> <br>',
-//     '<p>Github</p> <br> <p>É uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. </p> <br>'
-// ]
+function smoothScrollTo(endX, endY, duration) {
+  const startX = window.scrollX || window.pageXOffset;
+  const startY = window.scrollY || window.pageYOffset;
+  const distanceX = endX - startX;
+  const distanceY = endY - startY;
+  const startTime = new Date().getTime();
 
-// skills.forEach((elemento, index)=>{
-//     elemento.addEventListener('mouseout', (evento, elemento,) => {
-//         descricao.innerHTML = '/* Passe o mouse por cima de alguma habilidade para ler a descrição */';
-//     })
-// });
+  duration = typeof duration !== "undefined" ? duration : 400;
+
+  const easeInOutQuart = (time, from, distance, duration) => {
+    if ((time /= duration / 2) < 1)
+      return (distance / 2) * time * time * time * time + from;
+    return (-distance / 2) * ((time -= 2) * time * time * time - 2) + from;
+  };
+
+  const timer = setInterval(() => {
+    const time = new Date().getTime() - startTime;
+    const newX = easeInOutQuart(time, startX, distanceX, duration);
+    const newY = easeInOutQuart(time, startY, distanceY, duration);
+    if (time >= duration) {
+      clearInterval(timer);
+    }
+    window.scroll(newX, newY);
+  }, 1000 / 60);
+}
+
+document.querySelector(".hamburger").addEventListener("click", () =>
+  document.querySelector(".mobile").classList.toggle("show-menu")
+);

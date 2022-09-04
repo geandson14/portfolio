@@ -1,4 +1,5 @@
 @import url('style.css');
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@400;600&family=Oswald&family=Passion+One&family=Sriracha&display=swap');
 
 /* configurações padrões */
 
@@ -11,6 +12,8 @@
 
 html, body{
     height: 100%;
+    scroll-behavior: smooth;
+    background: #f5f5f5;
 }
 
 /* variaveis */
@@ -28,7 +31,7 @@ html, body{
 :root{
     --cor1: #151515;
     --cor2: #1F203A;
-    --cor3: #787878;
+    --cor3: #808080;
     --cor4: #00768c;
     --cor5: #00ACCC;
     --cor6: #EBEBEB;
@@ -43,8 +46,8 @@ h1{
 }
 
 h2{
-    color: var(--cor5);
-    font-size: clamp(0.3em, 1.4em + 1.5vw, 2.8em);
+    color: var(--cor4);
+    font-size: clamp(0.7em, 1.5em + 1.5vw, 2.8em);
     padding-bottom: 40px;
 }
 
@@ -81,7 +84,7 @@ h1, h2, h3, a{
 
 @media screen and (max-width: 1200px){
     .background{
-        background-image: url("/portfolio/image/backgound-media.jpeg");
+        background-image: url("../image/backgound-media.jpeg");
     }
 
     #serv .serv-single{
@@ -92,67 +95,103 @@ h1, h2, h3, a{
     #serv .serv-single .centro{
         margin: 0 auto;
     }
+}
+
+@media screen and (max-width: 1000px){
+    header .email{ 
+        display: none !important;
+    }
 
     header .desktop{
         flex-direction: row-reverse;
     }
-
-    header .desktop .email{ 
-        display:none !important;
-    }
 }
 
+
 @media screen and (max-width: 900px){
-    header .desktop{ 
-        display:none !important;
+    header .desktop{
+        display: none;
     }
 
     header .mobile{
-        display: block;
+        display: flex;
+        flex-direction: row-reverse;
     }
 
-    header .mobile i{
-       font-size: 28px; 
-       color: var(--cor3);
-       cursor: pointer;
-    }
-
-    header .mobile nav{
+    header .menu{
+        height: 0;
+        width: 100%;
+        display: flex;
+        transition:.7s;
         position: absolute;
-        display: none;
-        width: 100%; 
-        top: 92px; 
-        left: 0; 
-    }
-
-    header .mobile a{
-        display: block;
-        padding: 15px 0;
         background: white;
+        flex-direction: column;
         text-align: center;
-        border-top: 1px solid rgb(198, 198, 198);
+        top: 90px;
+        left: 0;
+        visibility: hidden;
+        overflow-y: hidden;
     }
 
-    header .mobile a:hover{
-        color: var(--cor4); 
-        text-decoration: underline;
+    header .menu a{
+        padding: 20px;
+        margin: 0 10px;
+        border-top: 1px solid rgba(0, 0, 0, 0.100);
+    }
+
+    .hamburger{
+        width: 35px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .show-menu{
+       display: block;
+    }
+
+    .line{
+        height: 3px;
+        width: 100%;
+        padding: 1px;
+        transition: transform .7s;
+        background-color: var(--cor4);
+    }
+
+    .show-menu #line1{
+        transform: rotate(45deg) translate(.3rem, .9rem);
+    }
+
+    .show-menu #line2{
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .show-menu #line3{
+        transform: rotate(-45deg) translate(.3rem, -.9rem);
+    }
+
+    .show-menu .menu{
+        height: 295px;
+        visibility: visible;
     }
 
     .background{
         height: calc(100vh - 62px);
     }
 
-    section.main #serv{
+    section.main #servicos{
         display: flex;
         align-items: center;
         flex-direction: column;
     }
 
-    section.main #serv .l{
+    section.main #servicos .l{
         border: 0;
     }
 
-    #serv .serv-single{
+    #servicos .serv-single{
         width: 80%;
     }
 
@@ -169,10 +208,10 @@ h1, h2, h3, a{
 
 @media screen and (max-width: 700px){
     .background{
-        background-image: url("/portfolio/image/backgound-pequena.jpeg");
+        background-image: url("../image/backgound-pequena.jpeg");
     }
 
-    #serv .serv-single{
+    #servicos .serv-single{
         width: 95%;
     }
 
