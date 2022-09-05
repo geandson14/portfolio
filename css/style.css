@@ -1,5 +1,9 @@
 /* header */
 
+header{
+    background: white;
+}
+
 header .mobile{
     display: none;
 }
@@ -153,6 +157,7 @@ section.main .sobre p{
 }
 
 section.main #servicos{
+    background-color: white;
     border-radius: 15px;
     margin-top: -160px;
     padding: 50px 0;
