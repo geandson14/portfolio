@@ -12,7 +12,8 @@ header .center{
 }
 
 header .logo img{
-    height: 70px;
+    max-width: 150px;
+    width: 140%;
 }
 
 header .center a{
@@ -23,14 +24,13 @@ header .center .desktop{
     justify-content: space-between;
     align-items: center;
     display: flex;
-    width: 85%;
+    width: 80%;
 }
 
 header .email a{
-    color: rgb(103, 103, 103);
     display: flex;
+    color: white;
     cursor: pointer;
-    font-weight: 700;
     flex-wrap: nowrap;
     padding-left: 20px;  
     font-size: clamp(0.6em, 0.7em + 0.6vw, 1.3em);
@@ -45,6 +45,7 @@ header .center nav.desktop .menu a{
     margin-left: 20px;
     font-weight: 700;
     font-size: 1em;
+    color: white;
 }
 
 header nav.desktop .menu a:hover{
@@ -56,9 +57,9 @@ header nav.desktop .menu a:hover{
 .background{
     width: 100%;
     height: calc(100vh - 92px);
-    background-image: url("../image/backgound-original.jpeg");
-    background-size: cover;
+    background-image: url("../image/backgound-media.jpeg");
     background-position: center;
+    background-size: cover;
 }
 
 .opac{
@@ -80,7 +81,6 @@ header nav.desktop .menu a:hover{
 .opac i{
     width: 40px; 
 }
-
 
 .background .texto{
     color: white;
@@ -137,11 +137,8 @@ section.main .sobre{
     padding: 110px 10px;
     width: 100%;
     height: 500px;
-    background: var(--cor6);
-}
-
-section.main .sobre h2{
-    color: var(--cor4);
+    color: white;
+    background: var(--cor2);
 }
 
 section.main .sobre p{
@@ -153,7 +150,7 @@ section.main .sobre p{
 }
 
 section.main #servicos{
-    background: white;
+    background: var(--cor1);
     border-radius: 15px;
     margin-top: -160px;
     padding: 50px 0;
@@ -173,16 +170,17 @@ section.main .serv-single p{
 }
 
 section.main #servicos .l{
-    border-right: 1px solid #008dcf2a;
+    border-right: 1px solid rgba(48, 48, 48, 0.400);
 }
 
 section.main #servicos h3{
     font-size: clamp(0.4em, 0.9em + 1vw, 1.4em);
+    color: white;
 }
 
-section.main .serv-single i{
-    color: var(--cor4);
+section.main .serv-single i{ 
     font-size: 60px;
+    color: var(--cor5);
     padding-bottom: 25px;
 }
 
@@ -214,7 +212,7 @@ section.main .habilidades .center{
 
 .habilidades ul li i{
     padding: 100px 0 20px 0;
-    color: var(--cor4);
+    color: var(--cor5);
     font-size: 60px;
 }
 
@@ -241,7 +239,6 @@ section.main .habilidades .center{
     width: 32%;
     margin: 5px;
     border-radius: 20px;
-    border: 1px solid white;
 }
 
 .projetos .center img{
@@ -285,7 +282,6 @@ section.main .github .container{
 
 section.main .github h2{
     padding-bottom: 25px;
-    color: var(--cor5);
 }
 
 section.main .github i{
@@ -307,8 +303,9 @@ section.main .github a{
     height: 40px;
     display: flex;
     margin: 30px auto;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    
 }
 
 section.main .github a:hover{
@@ -340,7 +337,6 @@ footer .contato{
 
 .contato h2{
     padding: 0;
-    color: var(--cor5);
 }
 
 .contato p{
@@ -352,16 +348,16 @@ footer .contato{
 
 .contato form input,
 .contato form textarea{
-    display: block;
-    height: 50px;
-    margin: 10px 0;
-    padding: 15px;
-    background: var(--cor1);
-    border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     outline: 0;
     width: 100%;
+    height: 50px;
+    border: none;
+    padding: 15px;
+    margin: 10px 0;
+    display: block;
     color: white;
+    background: var(--cor1);
+    border-bottom: 1px solid rgb(46, 46, 46);
 }
 
 .contato form .cont{
@@ -384,22 +380,28 @@ footer .contato{
 }
 
 .contato form input[type=submit]{
-    border: 2px solid var(--cor5);
     background: var(--cor5);
     border-radius: 10px;
-    color: var(--cor5);
+    color: var(--cor3);
     font-weight: bold;
     margin-top: 50px;
-    font-size: 17px;
+    font-size: 19px;
     cursor: pointer;
     color: white;
     height: 55px;
 }
 
 .contato form input[type=submit]:hover{
-    border: 3px solid var(--cor4);
     background: var(--cor4);
     transition: 0.5s;
+}
+
+.contato input:-webkit-autofill,
+.contato textarea:-webkit-autofill{
+    border-bottom: 1px solid rgb(46, 46, 46);
+    -webkit-text-fill-color: white !important;
+    box-shadow: 0 0 0px 1000px var(--cor1) inset;
+    -webkit-box-shadow: 0 0 0px 1000px var(--cor1) inset;
 }
 
 footer .contato-info > p{

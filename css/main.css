@@ -12,6 +12,7 @@
 
 html, body{
     height: 100%;
+    background: var(--cor1);
     scroll-behavior: smooth;
 }
 
@@ -29,11 +30,29 @@ html, body{
 
 :root{
     --cor1: #151515;
-    --cor2: #1F203A;
+    --cor2: #1a1a1a;
     --cor3: #808080;
     --cor4: #00768c;
     --cor5: #00ACCC;
-    --cor6: #EBEBEB;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Cor do indicador de rolagem */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+    /* background-color: rgb(77, 77, 77); */
+    background-color: var(--cor3);
+    border: 1px solid var(--cor2);
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+    /* background-color: #919191; */
+    background-color: var(--cor5);
 }
 
 ul{
@@ -45,7 +64,7 @@ h1{
 }
 
 h2{
-    color: var(--cor4);
+    color: var(--cor5);
     font-size: clamp(0.7em, 1.5em + 1.5vw, 2.8em);
     padding-bottom: 40px;
 }
@@ -82,10 +101,6 @@ h1, h2, h3, a{
 /* reponsiva */
 
 @media screen and (max-width: 1200px){
-    .background{
-        background-image: url("../image/backgound-media.jpeg");
-    }
-
     #serv .serv-single{
         flex-wrap: wrap;
         width: 49%;
@@ -123,7 +138,7 @@ h1, h2, h3, a{
         display: flex;
         transition:.7s;
         position: absolute;
-        background: white;
+        background: var(--cor1);
         flex-direction: column;
         text-align: center;
         top: 90px;
@@ -135,7 +150,8 @@ h1, h2, h3, a{
     header .menu a{
         padding: 20px;
         margin: 0 10px;
-        border-top: 1px solid rgba(0, 0, 0, 0.100);
+        color: white;
+        border-top: 1px solid rgb(33, 33, 33);
     }
 
     .hamburger{
