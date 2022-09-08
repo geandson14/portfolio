@@ -18,16 +18,6 @@ html, body{
 
 /* variaveis */
 
-/* :root{
-    --cor1: #333333;
-    --cor2: #1F203A;
-    --cor3: #ffa800;
-    --cor4: #D98F00;
-    --cor5: #E5E5E5;
-    --cor6: #787878;
-}  */
-
-
 :root{
     --cor1: #151515;
     --cor2: #1a1a1a;
@@ -40,18 +30,18 @@ html, body{
     width: 10px;
 }
 
-/* Cor do indicador de rolagem */
-::-webkit-scrollbar-thumb:vertical,
-::-webkit-scrollbar-thumb:horizontal {
-    /* background-color: rgb(77, 77, 77); */
-    background-color: var(--cor3);
-    border: 1px solid var(--cor2);
+::-webkit-scrollbar-track {
+    background: #252525;
 }
 
-/* Cor do indicador de rolagem - ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: var(--cor3);
+    border: 1px solid #252525;
+}
+
 ::-webkit-scrollbar-thumb:vertical:hover,
 ::-webkit-scrollbar-thumb:horizontal:hover {
-    /* background-color: #919191; */
     background-color: var(--cor5);
 }
 

@@ -382,17 +382,16 @@ footer .contato{
 .contato form input[type=submit]{
     background: var(--cor5);
     border-radius: 10px;
-    color: var(--cor3);
+    color: var(--cor1);
     font-weight: bold;
     margin-top: 50px;
     font-size: 19px;
     cursor: pointer;
-    color: white;
     height: 55px;
 }
 
 .contato form input[type=submit]:hover{
-    background: var(--cor4);
+    background: var(--cor5);
     transition: 0.5s;
 }
 
